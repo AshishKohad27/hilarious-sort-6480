@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+
+<body>
+    <!-- after sign up we can able to login by using local st   orage -->
+    <form>
+        <input id="name" type="text" placeholder="Your Name">
+        <input id="email" type="text" placeholder="Work Email">
+        <input id="phone" type="text" placeholder="Phone">
+        <input id="company" type="text" placeholder="Company Name">
+        <select id="companySize">
+            <option value="">Company Size</option>
+            <option value="1 - 10">1 - 10</option>
+            <option value="11 - 50">11 - 50</option>
+            <option value="51 - 200">51 - 200</option>
+            <option value="201 - 500<">201 - 500</option>
+            <option value="501 - 1000">501 - 1000</option>
+            <option value="1001 - 5000">1001 - 5000</option>
+            <option value="5001 - 10000">5001 - 10,000</option>
+            <option value="10,000+">10,000+</option>
+        </select>
+        <select name="" id="industry">
+            <option value="">Industry</option>
+            <option value="Banking">Banking</option>
+            <option value="Construction">Construction</option>
+            <option value="Creative  Agency (Web,Advertising,Video">Creative Agency (Web,Advertising,Video)</option>
+            <option value="Educaton and traning">Educaton and traning</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Food & Beverage">Food & Beverage</option>
+            <option value="Government">Government</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="IT Service">IT Service</option>
+            <option value="Non Profit Organization">Non Profit Organization</option>
+            <option value="Real Estate">Real Estate</option>
+            <option value="Retail">Retail</option>
+            <option value="Software and App Develoment">Software and App Develoment</option>
+            <option value="Telecommunications">Telecommunications</option>
+            <option value="Wholesale">Wholesale</option>
+            <option value="Other">Other</option>
+        </select>
+        <input id="accountname" type="text" placeholder="Account Name">
+        <input id="password" type="password" placeholder="Password">
+        <input type="submit">
+    </form>
+</body>
+
+</html>
+<script>
+    let accountdetailsArr = JSON.parse(localStorage.getItem("Login-details")) || [];
+    document.querySelector("form").addEventListener("submit", submitfunction);
+    function submitfunction(event) {
+        event.preventDefault();
+        // console.log("i am inside signUp");
+        let accountdetailsObj = {
+            name: document.querySelector("#name").value,
+            email: document.querySelector("#email").value,
+            phone: document.querySelector("#phone").value,
+            company: document.querySelector("#company").value,
+            companySize: document.querySelector("#companySize").value,
+            industry: document.queryCommandIndeterm("#industry").value,
+            accountname: document.querySelector("#accountname").value,
+            passward: document.querySelector("#passward").value,
+        }
+        // console.log(accountdetailsObj);
+        accountdetailsArr.push(accountdetailsObj);
+        localStorage.setItem("Login-details", JSON.stringify(accountdetailsArr));
+        alert("Passward anf Account Name")
+    }
+</script>

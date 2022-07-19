@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+</head>
+<style>
+    #Middle {
+        width: 99%;
+        height: 400px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        background-color: aqua;
+    }
+
+    #Middle>div {
+        background-color: aquamarine;
+    }
+</style>
+
+<body>
+    <div id="Middle">
+        <div>
+            1
+            <div>
+                <h1>Log into HappyFox Help Desk</h1>
+                <form>
+                    <label for=""> Account Name</label>
+                    <input type="text" id="accountname" placeholder="Enter Your Account Name" />
+                    <label for="">Password</label>
+                    <input type="password" id="password" placeholder="Password">
+                    <input type="submit" />
+                </form>
+                <div>
+                    <p>Forgot account name? Click here</p>
+                    <p>If you don't have an account <span>Click Here</span></p>
+                </div>
+            </div>
+            <div>
+                <img src="https://assets.www.happyfox.com/v2/images/hf-chatbubble-icon.svg" alt="" />
+                <h1>Looking for HappyFox Chat</h1>
+                <button>Login</button>
+            </div>
+        </div>
+        <div>
+            2
+            <div>
+                <img src="https://assets.www.happyfox.com/v2/images/chatbot-bg.png" alt="" />
+                <div>145</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    // let getdetailsArr = JSON.parse(localStorage.getItem("Login-details")) || [];
+    let form = document.querySelector("form");
+    form.addEventListener("submit",function(event){
+        event.preventDefault(); 
+        console.log("i am sumbit")
+        let getdetailsObj = {
+            accountname : form.accountname.value,
+            passward : form.passward.value,
+        }
+        console.log(getdetailsObj)
+    })
+
+    // document.querySelector("form").addEventListener("submit",myfun);
+    // function myfun(event){
+    //     event.preventDefault()
+    //     console.log("i am submit2")
+    // }
+
+</script>
