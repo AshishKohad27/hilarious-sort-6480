@@ -1,0 +1,57 @@
+/* Bottom Section of Login   */
+#bottom {
+  background-color: #181c20;
+  height: 150px;
+  padding-top: 6px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+}
+
+#bottom > div:first-child {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  width: 60%;
+  margin: auto;
+  height: 50px;
+}
+
+#bottom > div:first-child {
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 0px 150px;
+}
+
+#bottom > div:first-child > div {
+  display: flex;
+  color: #f1eeee;
+  margin: auto;
+}
+#bottom > div:last-child {
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 27px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+#bottom > div:last-child > div {
+  display: flex;
+  color: #f1eeee;
+  margin: auto;
+}
+#bootomfotter > div {
+  margin-left: 50px;
+}
+#bottomfotter > div:nth-child(1) {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+#bottomfotter > div:nth-child(1) > div:nth-child(1) p {
+  margin-top: 10px;
+}
+#bottomfotter > div:nth-child(2) > div {
+  width: 35px;
+}

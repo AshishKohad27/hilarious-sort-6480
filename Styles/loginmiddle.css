@@ -1,0 +1,115 @@
+#Middle {
+  width: auto;
+  height: 530px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  font-family: sans-serif;
+}
+
+#Middle > div:last-child img {
+  width: 665px;
+  height: 530px;
+}
+
+#middleDiv {
+  width: 500px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#middleDiv > h1 {
+  margin-top: -20px;
+  font-size: 28px;
+  text-align: center;
+}
+
+form {
+  width: 401px;
+  height: auto;
+  margin: auto;
+  margin-top: -10px;
+}
+
+form > input {
+  width: 380px;
+  height: 30px;
+  padding-left: 20px;
+  margin-top: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+form > input:last-child {
+  margin-bottom: 5px;
+  margin-top: -12px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #f16631;
+}
+
+form > label {
+  font-size: 16px;
+}
+
+form + div {
+  width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+form + div p {
+  margin-top: 10px;
+}
+
+form + div p + p {
+  padding-top: -200px;
+  margin-top: -12px;
+}
+#span {
+  color: blue;
+}
+
+/* signup Select tag */
+#companySize,
+#industry {
+  width: 405px;
+  height: 30px;
+  font-size: 16px;
+  color: grey;
+  padding-left: 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+#industry {
+  margin-bottom: 10px;
+}
+
+#middleDiv + div {
+  width: 500px;
+  margin: auto;
+  margin-top: 50px;
+  border-top: 2px solid black;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+#middleDiv + div h1 {
+  margin-left: -40px;
+  font-weight: 100;
+}
+
+#middleDiv + div button {
+  background-color: #f1eeee;
+  border: 0px solid;
+  border-radius: 20px;
+  margin-top: 12px;
+  padding: 0px 18px;
+  height: 35px;
+}

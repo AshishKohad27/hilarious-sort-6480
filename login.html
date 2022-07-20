@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login into happyfox</title>
+    <link rel="stylesheet" href="./Styles/indexnav.css">
+    <link rel="stylesheet" href="./Styles/loginbottom.css">
+    <link rel="stylesheet" href="./Styles/loginmiddle.css">
+</head>
+<style>
+    #middleDiv {
+        margin-top: 80px;
+    }
+</style>
+
+<body>
+    <!-- Navbar of Login -->
+    <div class="Navbar1" id="Navbar1">
+        <div>
+
+            <div>
+                <img src="https://assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg" alt="" />
+            </div>
+
+            <div>
+                <a href="">Customer Service</a>
+            </div>
+
+            <div>
+                <a href="">IT Support</a>
+            </div>
+
+            <div>
+                <a href="">Operation Support</a>
+            </div>
+
+        </div>
+
+        <div id="login">
+            <a href="">Log In</a>
+        </div>
+    </div>
+
+    <div class="Navbar1" id="Navbar2">
+        <div>
+            <div>
+                <img src="https://assets.www.happyfox.com/v2/images/site-nav/helpdesk-logo.svg" alt="" />
+            </div>
+            <div>
+                <a href="">Feature</a>
+            </div>
+            <div>
+                <a href="">Solution</a>
+            </div>
+            <div>
+                <a href="">Price</a>
+            </div>
+            <div>
+                <a href="">Resources</a>
+            </div>
+        </div>
+        <div>
+            <a href="">Get a Demo</a>
+        </div>
+    </div>
+</body>
+
+<body>
+    <!-- Login Box -->
+    <div id="Middle">
+        <div>
+            <div id="middleDiv">
+                <h1>Log into</h1>
+                <h1>HappyFox Help Desk</h1>
+                <form>
+                    <label for=""> Account Name</label>
+                    <input type="text" id="accountname" placeholder="Enter Your Account Name" />
+                    <label for="">Password</label>
+                    <input type="password" id="password" placeholder="Password">
+                    <input type="submit" />
+                </form>
+                <div>
+                    <p>Forgot account name? <span id="span">Click Here</span></p>
+                    <p>If you don't have an account <span id="span">Click Here</span> for Sign Up</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="https://assets.www.happyfox.com/v2/images/hf-chatbubble-icon.svg" alt="" />
+                <h1>Looking for HappyFox Chat</h1>
+                <button>Login <img src="https://assets.www.happyfox.com/v2/images/new-tab-icon.svg" alt=""></button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://assets.www.happyfox.com/v2/images/chatbot-bg.png" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div id="bottom">
+        <div>
+            <div>
+                <img src="	https://assets.www.happyfox.com/v2/images/bottom-footer/helpdesk-footer.svg" alt="">
+                <p>Help Desk</p>
+            </div>
+            <div>
+                <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/hf-assist-ai-footer.svg" alt="">
+                <p>Assist AI</p>
+            </div>
+            <div>
+                <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/livechat-footer.svg" alt="">
+                <p>Live Chat</p>
+            </div>
+            <div>
+                <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/chatbot-footer.svg" alt="">
+                <p>Chatbot</p>
+            </div>
+            <div>
+                <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/bi-footer.svg" alt="">
+                <p>Business Intelligence</p>
+            </div>
+            <div>
+                <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/workflows-footer.svg" alt="">
+                <p>Workflows</p>
+            </div>
+            <div>
+                <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/inapp-chat-footer.svg" alt="">
+                <p>In-App Chat</p>
+            </div>
+        </div>
+
+        <div id="bottomfotter">
+            <div>
+                <div>
+                    <p><img src="https://assets.www.happyfox.com/img/lang-icon.svg" alt=""> English</p>
+                </div>
+                <div>
+                    <p>Terms</p>
+                </div>
+                <div>
+                    <p>Privacy</p>
+                </div>
+                <div>
+                    <p>Status</p>
+                </div>
+                <div>
+                    <p>Security</p>
+                </div>
+                <div>
+                    <p>GDPR</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="https://assets.www.happyfox.com/v2/images/facebook-logo-button1x.svg" alt="">
+                </div>
+                <div>
+                    <img src="https://assets.www.happyfox.com/v2/images/twitter1x.svg" alt="">
+                </div>
+                <div>
+                    <img src="https://assets.www.happyfox.com/v2/images/youtube1x.svg" alt="">
+                </div>
+                <div>
+                    <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/linkedin-logo-button.svg" alt="">
+                </div>
+            </div>
+
+            <div>
+                <p>Copyright ©2022 HappyFox Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    let getdetails = JSON.parse(localStorage.getItem("Login-details")) || [];
+    console.log(getdetails)
+
+
+    let form = document.querySelector("form");
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        console.log("i am sumbit")
+        formName = form.accountname.value;
+        console.log(formName);
+        formPass = form.password.value;
+        console.log(formPass);
+
+        getdetails.forEach(function (ele) {
+            if ((formName !== "" && formPass !== "") && formName === ele.name && formPass === ele.passward) {
+                console.log("same name,passward")
+                alert("You are Successfully Login")
+            }
+            // else if(formName===ele.name && formPass===ele.passward){
+            //     console.log("same name,passward")
+            //     alert("You are Successfully Login")
+            // }
+        })
+    })
+</script>
