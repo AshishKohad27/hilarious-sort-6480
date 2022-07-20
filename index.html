@@ -1,101 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-  </head>
-  <style>
-    #Navbar1 ,#Navbar2{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      background-color: aqua;
-      width: 99%;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      /* gap: 150px; */
-    }
-    #Navbar1 > div {
-      background-color: olive;
-      border: 1px solid black;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      /* width: 50px; */
-      gap: 50px;
-      display: flex;
-      justify-content: space-between;
-      padding-left: 100px;
-    }
-    #Navbar2 > div {
-      background-color: olive;
-      border: 1px solid black;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      /* width: 50px; */
-      gap: 40px;
-      display: flex;
-      justify-content: space-between;
-      padding-left: 60px;
-    }
 
-  </style>
-  <body>
-    <div id="Navbar1">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <link rel="stylesheet" href="./indexnav.css">
+</head>
+
+<body>
+  <div class="Navbar1" id="Navbar1">
+    <div>
+
       <div>
-            <div>
-            <img
-                src="https://assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg"
-                alt=""
-            />
-            </div>
-            <div>
-            <a href="">Customer Service</a>
-            </div>
-            <div>
-            <a href="">IT Support</a>
-            </div>
-            <div>
-            <a href="">Operation Support</a>
-            </div>
+        <img src="https://assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg" alt="" />
       </div>
+
       <div>
-        <a href="">Log In</a>
+        <a href="">Customer Service</a>
       </div>
+
+      <div>
+        <a href="">IT Support</a>
+      </div>
+
+      <div>
+        <a href="">Operation Support</a>
+      </div>
+
     </div>
 
-    <div id="Navbar2">
-        <div>
-              <div>
-              <img
-                  src="https://assets.www.happyfox.com/v2/images/site-nav/helpdesk-logo.svg"
-                  alt=""
-              />
-              </div>
-              <div>
-              <a href="">Feature</a>
-              </div>
-              <div>
-              <a href="">Solution</a>
-              </div>
-              <div>
-              <a href="">Price</a>
-              </div>
-              <div>
-              <a href="">Resources</a>
-              </div>
-        </div>
-        <div>
-          <a href="">Get a Demo</a>
-        </div>
-      </div>
-  </body>
+    <div id="login">
+      <a href="">Log In</a>
+    </div>
+  </div>
 
-  <!-- <body>
+  <div class="Navbar1" id="Navbar2">
+    <div>
+      <div>
+        <img src="https://assets.www.happyfox.com/v2/images/site-nav/helpdesk-logo.svg" alt="" />
+      </div>
+      <div>
+        <a href="">Feature</a>
+      </div>
+      <div>
+        <a href="">Solution</a>
+      </div>
+      <div>
+        <a href="">Price</a>
+      </div>
+      <div>
+        <a href="">Resources</a>
+      </div>
+    </div>
+    <div>
+      <a href="">Get a Demo</a>
+    </div>
+  </div>
+</body>
+
+<!-- <body>
     <div id="Navbar1">
         <div>1</div>
         <div>2</div>
     </div>
 </body>  -->
+
 </html>

@@ -2,20 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>signup</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp into happyfox</title>
+  <link rel="stylesheet" href="./Styles/indexnav.css">
+  <link rel="stylesheet" href="./Styles/loginbottom.css">
+  <link rel="stylesheet" href="./Styles/loginmiddle.css">
 </head>
 
 <body>
-    <!-- after sign up we can able to login by using local st   orage -->
-    <form>
-        <input id="name" type="text" placeholder="Your Name">
-        <input id="email" type="text" placeholder="Work Email">
-        <input id="phone" type="text" placeholder="Phone">
-        <input id="company" type="text" placeholder="Company Name">
-        <select id="companySize">
+  <div class="Navbar1" id="Navbar1">
+    <div>
+
+      <div>
+        <img src="https://assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg" alt="" />
+      </div>
+
+      <div>
+        <a href="">Customer Service</a>
+      </div>
+
+      <div>
+        <a href="">IT Support</a>
+      </div>
+
+      <div>
+        <a href="">Operation Support</a>
+      </div>
+
+    </div>
+
+    <div id="login">
+      <a href="">Log In</a>
+    </div>
+  </div>
+
+  <div class="Navbar1" id="Navbar2">
+    <div>
+      <div>
+        <img src="https://assets.www.happyfox.com/v2/images/site-nav/helpdesk-logo.svg" alt="" />
+      </div>
+      <div>
+        <a href="">Feature</a>
+      </div>
+      <div>
+        <a href="">Solution</a>
+      </div>
+      <div>
+        <a href="">Price</a>
+      </div>
+      <div>
+        <a href="">Resources</a>
+      </div>
+    </div>
+    <div>
+      <a href="">Get a Demo</a>
+    </div>
+  </div>
+</body>
+
+<body>
+  <!-- after sign up we can able to login by using local st   orage -->
+  <div id="Middle">
+    <div>
+      <div id="middleDiv">
+        <h1>Sign Up into HappyFox</h1>
+        <form>
+          <input id="name" type="text" placeholder="Your Name">
+          <input id="email" type="text" placeholder="Work Email">
+          <input id="phone" type="text" placeholder="Phone">
+          <input id="company" type="text" placeholder="Company Name">
+          <select id="companySize">
             <option value="">Company Size</option>
             <option value="1 - 10">1 - 10</option>
             <option value="11 - 50">11 - 50</option>
@@ -25,8 +83,8 @@
             <option value="1001 - 5000">1001 - 5000</option>
             <option value="5001 - 10000">5001 - 10,000</option>
             <option value="10,000+">10,000+</option>
-        </select>
-        <select name="" id="industry">
+          </select>
+          <select name="" id="industry">
             <option value="">Industry</option>
             <option value="Banking">Banking</option>
             <option value="Construction">Construction</option>
@@ -46,33 +104,122 @@
             <option value="Telecommunications">Telecommunications</option>
             <option value="Wholesale">Wholesale</option>
             <option value="Other">Other</option>
-        </select>
-        <input id="accountname" type="text" placeholder="Account Name">
-        <input id="password" type="password" placeholder="Password">
-        <input type="submit">
-    </form>
+          </select>
+          <input id="accountname" type="text" placeholder="Account Name">
+          <input id="password" type="password" placeholder="Password">
+          <input type="submit">
+        </form>
+        <div>
+          <p>Redirected to <span id="span">Login</span></p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <img src="https://assets.www.happyfox.com/v2/images/chatbot-bg.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Section -->
+  <div id="bottom">
+    <div>
+      <div>
+        <img src="	https://assets.www.happyfox.com/v2/images/bottom-footer/helpdesk-footer.svg" alt="">
+        <p>Help Desk</p>
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/hf-assist-ai-footer.svg" alt="">
+        <p>Assist AI</p>
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/livechat-footer.svg" alt="">
+        <p>Live Chat</p>
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/chatbot-footer.svg" alt="">
+        <p>Chatbot</p>
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/bi-footer.svg" alt="">
+        <p>Business Intelligence</p>
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/workflows-footer.svg" alt="">
+        <p>Workflows</p>
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/inapp-chat-footer.svg" alt="">
+        <p>In-App Chat</p>
+      </div>
+    </div>
+
+    <div id="bottomfotter">
+      <div>
+        <div>
+          <p><img src="https://assets.www.happyfox.com/img/lang-icon.svg" alt=""> English</p>
+        </div>
+        <div>
+          <p>Terms</p>
+        </div>
+        <div>
+          <p>Privacy</p>
+        </div>
+        <div>
+          <p>Status</p>
+        </div>
+        <div>
+          <p>Security</p>
+        </div>
+        <div>
+          <p>GDPR</p>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <img src="https://assets.www.happyfox.com/v2/images/facebook-logo-button1x.svg" alt="">
+        </div>
+        <div>
+          <img src="https://assets.www.happyfox.com/v2/images/twitter1x.svg" alt="">
+        </div>
+        <div>
+          <img src="https://assets.www.happyfox.com/v2/images/youtube1x.svg" alt="">
+        </div>
+        <div>
+          <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/linkedin-logo-button.svg" alt="">
+        </div>
+      </div>
+
+      <div>
+        <p>Copyright ©2022 HappyFox Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
+
 <script>
-    let accountdetailsArr = JSON.parse(localStorage.getItem("Login-details")) || [];
-    document.querySelector("form").addEventListener("submit", submitfunction);
-    function submitfunction(event) {
-        event.preventDefault();
-        // console.log("i am inside signUp");
-        let accountdetailsObj = {
-            name: document.querySelector("#name").value,
-            email: document.querySelector("#email").value,
-            phone: document.querySelector("#phone").value,
-            company: document.querySelector("#company").value,
-            companySize: document.querySelector("#companySize").value,
-            industry: document.queryCommandIndeterm("#industry").value,
-            accountname: document.querySelector("#accountname").value,
-            passward: document.querySelector("#passward").value,
-        }
-        // console.log(accountdetailsObj);
-        accountdetailsArr.push(accountdetailsObj);
-        localStorage.setItem("Login-details", JSON.stringify(accountdetailsArr));
-        alert("Passward anf Account Name")
+  let accountdetailsArr = JSON.parse(localStorage.getItem("Login-details")) || [];
+  document.querySelector("form").addEventListener("submit", submitfunction);
+  function submitfunction(event) {
+    event.preventDefault();
+    // console.log("i am inside signUp");
+    let accountdetailsObj = {
+      name: document.querySelector("#name").value,
+      email: document.querySelector("#email").value,
+      phone: document.querySelector("#phone").value,
+      company: document.querySelector("#company").value,
+      companySize: document.querySelector("#companySize").value,
+      industry: document.queryCommandIndeterm("#industry").value,
+      accountname: document.querySelector("#accountname").value,
+      passward: document.querySelector("#passward").value,
     }
+    // console.log(accountdetailsObj);
+    accountdetailsArr.push(accountdetailsObj);
+    localStorage.setItem("Login-details", JSON.stringify(accountdetailsArr));
+    alert("Passward anf Account Name")
+  }
 </script>
