@@ -1,0 +1,84 @@
+#block_8 {
+    background-color: #eeeeee;
+    padding-top: 70px;
+    margin-top: -10px;
+  }
+
+  #block_8 > h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    color: #323643;
+  }
+
+  #block_8 > h1 + h1 {
+    font-weight: bold;
+    margin-top: -20px;
+    margin-bottom: 50px;
+  }
+
+  #block_8 > div {
+    width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px 40px;
+    /* background-color: olivedrab; */
+  }
+
+  #block_8 > div > div {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border-radius: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #block_8 > div > div:hover {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin-top: -7px;
+    margin-right: -8px;
+  }
+  #block_8+div{
+      background-color: #eeeeee;
+      height: 120px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 80px;
+  }
+  #block_8+div button{
+      border-radius: 5px;
+      border: 0px;
+      color: white;
+      padding: 14px 30px;
+      font-size: 14px;
+      font-weight: bold;
+  }
+  #block_8+div button:first-child{
+      background-color: #323643;
+      margin-right: 40px;
+  }
+  #block_8+div button:last-child{
+      background-color: #d4450e;
+      margin-left: 40px;
+  }
+  #block_8+div button:first-child:hover{
+      background-color: white;
+      color: black;
+      font-weight: 100;
+      border: 1px solid black ;
+
+  }
+  #block_8+div button:last-child:hover{
+      margin-bottom: -2px;
+      background-color: rgba(230, 128, 56 , 0.5px);
+      background-color: rgb(230, 128, 56);
+  }

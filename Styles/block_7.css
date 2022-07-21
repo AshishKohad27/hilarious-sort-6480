@@ -1,0 +1,118 @@
+#block_7 {
+    background-color: #eeeeee;
+    font-family: sans-serif;
+    margin-top: 90px;
+    padding-top: 10px;
+    position: relative;
+}
+
+#block_7>h1 {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+    color: #323643;
+}
+
+#block_7>h1+h1 {
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 50px;
+}
+
+#block_7>div {
+    width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+#block_7>div>div {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-radius: 6px;
+    height: 176px;
+    padding: 0px 30px;
+}
+
+#block_7>div>div:hover {
+    transition-duration: 100ms;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: -7px;
+    margin-right: -10px;
+}
+
+#block_7>div>div:nth-child(1) {
+    border-top: 8px solid #E1434B;
+}
+
+#block_7>div>div:nth-child(2) {
+    border-top: 8px solid #08C299;
+}
+
+#block_7>div>div:nth-child(3) {
+    border-top: 8px solid #429FFD;
+}
+
+#block_7>div>div:nth-child(4) {
+    border-top: 8px solid #EF6C35;
+}
+
+#block_7>div>div>div:first-child {
+    width: 30px;
+    height: 30px;
+    margin-top: 50px;
+    /* background-color: rgb(82, 70, 70); */
+}
+
+#block_7 .class {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    /* background-color: green; */
+    margin-top: 50px;
+    height: 50px;
+    margin-left: -190px;
+}
+
+#block_7 .class>h5 {
+    /* background-color: red; */
+    width: 360px;
+    margin-top: 0px;
+    font-size: 20px;
+    color: #323643;
+}
+
+#block_7 .class img {
+    /* background-color: tomato; */
+    margin-left: 20px;
+}
+
+#block_7 .class+p {
+    /* background-color: palegreen; */
+    margin-left: -190px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: -5px;
+    color: grey;
+}
+#block_7+div{
+    background-color: #eeeeee;
+    padding: 50px;
+}
+#block_7+div>button{
+    display: flex;
+    background-color: #d4450e;
+     border-radius: 5px;
+      border: 0px;
+      color: white;
+      padding: 14px 30px;
+      font-size: 14px;
+      font-weight: bold;
+      margin: auto;
+      margin-top: 80px;
+}
