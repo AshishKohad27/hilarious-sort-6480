@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>block_7</title>
+</head>
+<style>
+    #block_7 {
+        /* background-color: aqua; */
+        font-family: sans-serif;
+    }
+    #block_7>h1{
+        width: 500px;
+        margin: auto;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 100;
+        color: #323643;
+
+    }
+    #block_7>h1+h1{
+        font-weight: bold;
+        margin-top: 8px;
+        margin-bottom: 50px;
+    }
+
+    #block_7>div {
+        width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    #block_7>div>div {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        border-radius: 6px;
+        height: 176px;
+        padding: 0px 30px;
+    }
+
+    #block_7>div>div:hover {
+        transition-duration: 100ms;  
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition-property: margin-top;
+        margin-right: -10px;
+        /* transition-delay: 250ms;
+transition-property: margin-right; */
+
+    }
+
+    #block_7>div>div:nth-child(1) {
+        border-top: 8px solid #E1434B;
+    }
+
+    #block_7>div>div:nth-child(2) {
+        border-top: 8px solid #08C299;
+    }
+
+    #block_7>div>div:nth-child(3) {
+        border-top: 8px solid #429FFD;
+    }
+
+    #block_7>div>div:nth-child(4) {
+        border-top: 8px solid #EF6C35;
+    }
+
+    #block_7>div>div>div:first-child {
+        width: 30px;
+        height: 30px;
+        margin-top: 50px;
+        /* background-color: rgb(82, 70, 70); */
+    }
+
+    .class {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        /* background-color: green; */
+        margin-top: 50px;
+        height: 50px;
+        margin-left: -190px;
+    }
+
+    .class>h5 {
+        /* background-color: red; */
+        width: 360px;
+        margin-top: 0px;
+        font-size: 20px;
+        color: #323643;
+    }
+
+    .class img {
+        /* background-color: tomato; */
+        margin-left: 20px;
+    }
+
+    .class+p {
+        /* background-color: palegreen; */
+        margin-left: -190px;
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: -5px;
+        color: grey;
+    }
+</style>
+
+<body>
+    <div id="block_7">
+        <h1>Help Desk Software for today's</h1>
+        <h1>fast-changing global businesses</h1>
+    </div>
+</body>
+<span></span>
+
+</html>
+<script>
+    let helpDesk_B7 = [
+        {
+            img1: "https://assets.www.happyfox.com/v2/images/support-icon.svg",
+            head5: "For customer support",
+            img2: "https://assets.www.happyfox.com/v2/images/external-link-icon.svg",
+            para: "A customer support tool that helps redefine your customer service and ensure customer loyalty.",
+        },
+        {
+            img1: "https://assets.www.happyfox.com/v2/images/opration-icon.svg",
+            head5: "For IT operations",
+            img2: "https://assets.www.happyfox.com/v2/images/external-link-icon.svg",
+            para: "Customer support tool that helps IT and ITES companies deliver outstanding support.",
+        },
+        {
+            img1: "https://assets.www.happyfox.com/v2/images/discuss-icon.svg",
+            head5: "For HR &amp; Marketing",
+            img2: "https://assets.www.happyfox.com/v2/images/external-link-icon.svg",
+            para: "Track and manage issues from your customers and provide speedy resolutions.",
+        },
+        {
+            img1: "https://assets.www.happyfox.com/v2/images/team-icon.svg",
+            head5: "For all teams",
+            img2: "https://assets.www.happyfox.com/v2/images/external-link-icon.svg",
+            para: "All-in-one help desk ticketing system that provides faster and better support for your customers.",
+        }
+    ];
+
+    let sub_div = document.createElement("div");
+    helpDesk_B7.forEach(function (ele) {
+        let div = document.createElement("div");
+        let div_img = document.createElement("div");
+        let img1 = document.createElement("img");
+        img1.setAttribute("src", ele.img1);
+        let div_rest = document.createElement("div");
+        let div_h5_p = document.createElement("div");
+        div_h5_p.setAttribute("class", "class");
+        let head5 = document.createElement("h5");
+        head5.innerText = ele.head5;
+        let img2 = document.createElement("img");
+        img2.setAttribute("src", ele.img2);
+        let span = document.createElement("span")
+        let para = document.createElement("p");
+        para.innerText = ele.para;
+
+
+        div_img.append(img1)
+        span.append(img2)
+        head5.append(span);
+        div_h5_p.append(head5)
+        div_rest.append(div_h5_p, para)
+        div.append(div_img, div_rest);
+        sub_div.append(div);
+        document.querySelector("#block_7").append(sub_div)
+    })
+
+</script>
