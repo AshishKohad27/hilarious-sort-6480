@@ -1,0 +1,41 @@
+/* Home Footer Page */
+#homefooter {
+    background-color: #181c20;
+    height: 515px;
+    font-family: sans-serif;
+    font-size: 12px;
+  }
+
+  #homefooter > div {
+    width: 65%;
+    height: 465px;
+    margin: auto;
+    padding-top: 40px;
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  
+  p {
+    /* background-color: palegoldenrod;    */
+    margin-top: -3px;
+    color: grey;
+    font-weight: 100;
+  }
+
+  h5 {
+    margin-top: 3px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 12px;
+  }
+
+  a {
+    text-decoration: none;
+    color: grey;
+  }
+
+  a:hover {
+    color: white;
+  }

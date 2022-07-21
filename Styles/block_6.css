@@ -1,0 +1,122 @@
+/* Home Page Block 6 */
+#block_6 {
+  width: 100vw;
+  background-color: #272e35;
+  font-family: sans-serif;
+  margin-top: 100px;
+  padding-top: 100px;
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 160px;
+  /* border-bottom-left-radius: 80%; */
+}
+#block_6 #angle {
+  height: 100px;
+  width: 100vw;
+
+  background-color: white;
+  position: absolute;
+  z-index: 10;
+  top: -70px;
+  left: -10px;
+  transform: rotate(-2deg);
+}
+#block_6 #curved1 {
+  width: 750px;
+  height: 200px;
+  background-color: #272e35;
+  position: absolute;
+  z-index: 10;
+  bottom: -29px;
+  left: 0px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 250%;
+}
+#block_6 #curved2 {
+  width: 1200px;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  bottom: -140px;
+  left: 270px;
+  border-top-left-radius: 80%;
+}
+#block_6 > h1 {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 100;
+  color: white;
+}
+#block_6 > h1 + h1 {
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 50px;
+}
+
+#block_6 > div {
+  width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+#block_6 > div > div {
+  background-color: #323643;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  border-radius: 6px;
+  height: 176px;
+  padding: 0px 30px;
+  z-index: 12;
+}
+
+#block_6 > div > div:hover {
+  background-color: #212529;
+}
+
+#block_6 > div > div > div:first-child {
+  width: 30px;
+  height: 30px;
+  margin-top: 40px;
+  /* background-color: rgb(82, 70, 70); */
+}
+
+#block_6 .class {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  /* background-color: green; */
+  margin-top: 40px;
+  height: 50px;
+  margin-left: -190px;
+}
+
+#block_6 .class h5 {
+  /* background-color: red; */
+  width: 380px;
+  margin-top: 0px;
+  font-size: 20px;
+  color: white;
+  font-weight: 100;
+}
+
+#block_6 .class img {
+  /* background-color: tomato; */
+  margin-left: 20px;
+}
+
+#block_6 .class + p {
+  /* background-color: palegreen; */
+  margin-left: -190px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 10px;
+  color: grey;
+  font-weight: 100;
+}

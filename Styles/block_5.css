@@ -1,0 +1,25 @@
+/* Home Page Block 5 */
+#block_5{
+    /* background-color: #f16631; */
+    margin-top: -20px;
+    text-align: center;
+  }
+  #block_5>h1{
+   font-size: 2rem;
+   padding-top: 55px;
+   font-weight: 200 ;
+   color: grey;
+  }
+  #block_5>h1+h1{
+    font-weight: bold;
+    margin-top: -65px;
+    font-size: 34px;
+    color: #323643;
+  }
+  #block_5>p{
+    width: 900px;
+    margin: auto;
+    line-height: 25px;
+    color: grey ;
+    padding-bottom: 40px;
+  }
