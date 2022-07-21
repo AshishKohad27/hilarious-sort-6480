@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     #block_6 {
+        /* background-color: aqua; */
+        font-family: sans-serif;
+    }
+    #block_6>h1{
+        width: 500px;
+        margin: auto;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 100;
+        color: #323643;
+
+    }
+    #block_6>h1+h1{
+        font-weight: bold;
+        margin-top: 8px;
+        margin-bottom: 50px;
+    }
+
+    #block_6>div {
+        width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    #block_6>div>div {
+        background-color:#323643;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        border-radius: 6px;
+        height: 176px;
+        padding: 0px 30px;
+    }
+
+    #block_6>div>div:hover {
+        background-color: #212529;
+
+    }
+
+
+    #block_6>div>div>div:first-child {
+        width: 30px;
+        height: 30px;
+        margin-top: 50px;
+        /* background-color: rgb(82, 70, 70); */
+    }
+
+    .class {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        /* background-color: green; */
+        margin-top: 50px;
+        height: 50px;
+        margin-left: -190px;
+    }
+
+    .class>h5 {
+        /* background-color: red; */
+        width: 360px;
+        margin-top: 0px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .class img {
+        /* background-color: tomato; */
+        margin-left: 20px;
+    }
+
+    .class+p {
+        /* background-color: palegreen; */
+        margin-left: -190px;
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: -5px;
+        color: white;
+    }
+</style>
+<body>
+    <div id="block_6">
+        <h1>Align your goals.
+            </h1>
+            <h1>Improve your ROI</h1>
+
+            nearly ready
+
+    </div>
+</body>
+</html>
+<script>
+      let helpDesk_B7 = [
+        {
+            img1: "https://assets.www.happyfox.com/v2/images/handle-icon.svg",
+            head5: "Handle all inbound requests in one ticketing system",
+            para: "Convert email, phone, chat and web requests into tickets and keep them organized.",
+        },
+        {
+            img1: "https://assets.www.happyfox.com/v2/images/outsource-icon.svg",
+            head5: "Ease your day with a smart help desk software",
+            para: "Outsource complex and redundant workflows to a powerful smart rules engine.",
+        },
+        {
+            img1: "https://assets.www.happyfox.com/v2/images/analyse-icon.svg",
+            head5: "Analyse help desk metrics & create solid actions",
+            para: "A ticketing system that can crunch your support process data.",
+        },
+        {
+            img1: "https://assets.www.happyfox.com/v2/images/setting-icon.svg",
+            head5: "Tailor your support ticket system in all forms",
+            para: "Create your own custom fields, workflows & personalize the support experience.",
+        }
+    ];
+
+
+    let sub_div = document.createElement("div");
+    helpDesk_B7.forEach(function (ele) {
+        let div = document.createElement("div");
+        let div_img = document.createElement("div");
+        let img1 = document.createElement("img");
+        img1.setAttribute("src", ele.img1);
+        let div_rest = document.createElement("div");
+        let div_h5_p = document.createElement("div");
+        div_h5_p.setAttribute("class", "class");
+        let head5 = document.createElement("h5");
+        head5.innerText = ele.head5;
+        let para = document.createElement("p");
+        para.innerText = ele.para;
+
+
+        div_img.append(img1)
+        div_h5_p.append(head5)
+        div_rest.append(div_h5_p, para)
+        div.append(div_img, div_rest);
+        sub_div.append(div);
+        document.querySelector("#block_6").append(sub_div)
+    })
+</script>
