@@ -6,10 +6,189 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home Page</title>
-  <link rel="stylesheet" href="./indexnav.css">
+  <link rel="stylesheet" href="./Styles/indexnav.css">
 </head>
+<style>
+  body {
+    font-family: sans-serif;
+    font-size: 1rem;
+  }
+
+  /* Home Page Block 1 */
+  #block_1 {
+    /* background-color: aqua; */
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    margin-top: 65px;
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+
+  #block_1>h1 {
+    font-size: 48px;
+    font-weight: 400;
+  }
+
+  #block_1>h1+h1 {
+    margin-top: -33px;
+  }
+
+  #block_1>p {
+    font-size: 16px;
+  }
+
+  #block_1>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    margin-top: 40px;
+    width: 480px;
+    padding-bottom: 40px;
+  }
+
+  #block_1 input {
+    width: 300px;
+    height: 45px;
+    border: 2px solid #f16631;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 20px;
+    color: grey;
+  }
+
+  #block_1 button {
+    height: 51px;
+    padding: 0px 20px;
+    margin-left: 0px;
+    background-color: #f16631;
+    border: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: bold;
+    color: white;
+  }
+
+  /* Home Page Block 2 */
+  #block_2 {
+    width: 1100px;
+    height: 650px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #f16631;
+    border-radius: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+
+  /* Home Page Block 3 */
+  #block_3 {
+    margin: auto;
+    text-align: center;
+  }
+
+  #block_3 img {
+    margin-top: 60px;
+    width: 122px;
+    height: 63px;
+  }
+
+  #block_3>h1 {
+    font-size: 2rem;
+    margin: 40px;
+  }
+
+  #block_3>p {
+    margin: auto;
+    margin-top: -20px;
+    width: 450px;
+    line-height: 25px;
+    color: grey;
+  }
+
+  #block_3 span {
+    font-weight: bold;
+    color: black;
+  }
+
+  #block_3 button {
+    margin: 40px 0px 60px 0px;
+    padding: 10px 50px;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+
+  /* Home Page Block 4 */
+  #block_4{
+    background-color: #f2f2f2;  
+    padding-bottom: 140px;
+  }
+  #block_4>div{
+    display: grid;
+    width: 1100px;
+    margin: auto;
+    grid-template-columns: repeat(5,1fr);
+    /* background-color: aqua; */
+
+  }
+  #block_4 p{
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 40px;
+  }
+  #block_4>div>div{
+    width: 150px;
+    display: flex;
+    align-items: center ;
+    /* background-color: aquamarine; */
+    margin: auto;
+  }
+  #block_4>div>div:nth-child(1)>img{
+    width: 150px;
+    height: 28.5px;
+  }
+  #block_4>div>div:nth-child(2)>img{
+    width: 150px;
+    height: 75px;
+  }
+  #block_4>div>div:nth-child(3)>img{
+    width: 150px;
+    height: 76px;
+  }
+  #block_4>div>div:nth-child(4)>img{
+    width: 100px;
+    height: 98.5px;
+    padding-left: 25px;
+  }
+  #block_4>div>div:nth-child(5)>img{
+    width: 150px;
+    height: 25px;
+  }
+
+  /* Home Page Block 5 */
+  #block_5{
+    background-color: #f16631;
+    margin-top: -20px;
+    text-align: center;
+  }
+  #block_5>h1{
+   font-size: 2rem;
+   padding-top: 55px;
+   font-weight: 200 ;
+   color: grey;
+  }
+  #block_5>h1+h1{
+    font-weight: bold;
+    margin-top: -65px;
+    font-size: 34px;
+    color: #323643;
+  }
+  #block_5>p{
+    
+  }
+</style>
 
 <body>
+  <!-- Navbar Section -->
   <div class="Navbar1" id="Navbar1">
     <div>
 
@@ -58,13 +237,67 @@
       <a href="">Get a Demo</a>
     </div>
   </div>
+
+  <!-- Home Page Block 1 -->
+  <div id="block_1">
+    <h1>Get More Done with</h1>
+    <h1>a Modern Support Stack</h1>
+    <p>Deliver outstanding support and achieve new goals with HappyFox.</p>
+    <div>
+      <input type="email" value="Enter your work email">
+      <button>GET A DEMO</button>
+    </div>
+    <!-- <p>
+      By submitting, you agree to HappyFox’s Privacy Policy.
+    </p> -->
+  </div>
+
+  <!-- Home Page Block 2 -->
+  <div id="block_2">
+  </div>
+
+  <!-- Home Page Block 3 -->
+  <div id="block_3">
+    <img src="https://assets.www.happyfox.com/v2/images/pcmag-new-2021.svg?r=1658320818654" alt="">
+    <h1>Best Help Desk Software for 6 years in a row.</h1>
+    <p>All-in-one <span>help desk ticketing system</span> that provides faster and better support for your customers.
+    </p>
+    <button>Take a tour</button>
+  </div>
+
+  <!-- Home Page Block_4 -->
+  <div id="block_4">
+        <p>Trusted by Industry-Leading Companies</p>
+        <div> </div>
+  </div> 
+
+  <!-- Home Page Block_5 -->
+  <div id="block_5">
+    <h1>Provide Exceptional</h1>
+    <h1>Customer Support. Everyday.</h1>
+    <p>
+      Meet HappyFox, a practical help desk and customer support software solution. Reduce chaos and bring order to your
+      support process with a robust support ticket system, self-service knowledge base and community forums.
+    </p>
+  </div>
 </body>
 
-<!-- <body>
-    <div id="Navbar1">
-        <div>1</div>
-        <div>2</div>
-    </div>
-</body>  -->
-
 </html>
+<script>
+
+  let block_4 = [
+    "https://assets.www.happyfox.com/v2/logo/owler-logo.png",
+    "https://assets.www.happyfox.com/v2/logo/whirlpool.svg",
+    "https://assets.www.happyfox.com/v2/logo/jabra.svg",
+    "https://assets.www.happyfox.com/v2/logo/leap-frog.svg",
+    "https://assets.www.happyfox.com/v2/logo/harbour.svg"
+  ]
+
+  block_4.forEach(function (ele) {
+      let div_main = document.createElement("div");
+      let image = document.createElement("img");
+      image.setAttribute("src",ele);
+      div_main.append(image);
+      document.querySelector("#block_4>div").append(div_main);
+  })
+</script>
