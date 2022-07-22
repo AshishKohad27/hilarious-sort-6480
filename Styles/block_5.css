@@ -1,6 +1,5 @@
 /* Home Page Block 5 */
 #block_5{
-    /* background-color: #f16631; */
     margin-top: -20px;
     text-align: center;
   }
@@ -22,4 +21,10 @@
     line-height: 25px;
     color: grey ;
     padding-bottom: 40px;
+  }
+  @media all and (min-width: 160px) and (max-width:768px) {
+    #block_5>p{
+      width: 500px;
+      /* background-color: lawngreen; */
+    }
   }

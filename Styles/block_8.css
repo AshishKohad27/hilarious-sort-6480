@@ -82,3 +82,14 @@
       background-color: rgba(230, 128, 56 , 0.5px);
       background-color: rgb(230, 128, 56);
   }
+
+  @media all and (min-width: 160px) and (max-width:768px) {
+    #block_8 > div {
+      width: 500px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      /* background-color: olivedrab; */
+    }
+  
+  }

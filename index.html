@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./Styles/block_3.css" />
     <link rel="stylesheet" href="./Styles/block_4.css" />
     <link rel="stylesheet" href="./Styles/block_5.css" />
+    <link rel="stylesheet" href="./Styles/block_55.css">
     <link rel="stylesheet" href="./Styles/block_6.css" />
     <link rel="stylesheet" href="./Styles/block_7.css" />
     <link rel="stylesheet" href="./Styles/block_8.css" />
@@ -23,6 +24,7 @@
     body {
       font-family: sans-serif;
       font-size: 1rem;
+      background-color: #EEEEEE;
     }
     #block_1 button > a {
       color: white;
@@ -38,25 +40,25 @@
     <!-- Navbar Section -->
     <div class="Navbar1" id="Navbar1">
       <div>
-        <div>
-          <img
-            id="homecoming"
-            src="https://assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg"
-            alt="1"
-          />
-        </div>
+          <div>
+            <img
+              id="homecoming"
+              src="https://assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg"
+              alt="1"
+            />
+          </div>
 
-        <div>
-          <a href="">Customer Service</a>
-        </div>
+          <div>
+            <a href="">Customer Service</a>
+          </div>
 
-        <div>
-          <a href="">IT Support</a>
-        </div>
+          <div>
+            <a href="">IT Support</a>
+          </div>
 
-        <div>
-          <a href="">Operation Support</a>
-        </div>
+          <div>
+            <a href="">Operation Support</a>
+          </div>
       </div>
 
       <div id="login">
@@ -73,7 +75,7 @@
           />
         </div>
         <div>
-          <a href="">Feature</a>
+          <a href="feature.html">Feature</a>
         </div>
         <div>
           <a href="">Solution</a>
@@ -138,6 +140,40 @@
         forums.
       </p>
     </div>
+    <div id="block_55-slider">
+      <div>
+       <div id="slider1">
+           <p>Keep everything together</p>
+       </div>
+       <div id="slider2">
+           <p>Stay in Control</p>
+       </div>
+       <div id="slider3">
+           <p>Get things done, fast</p>
+       </div>
+      </div>
+   </div>
+   <div id="block_55">
+       <div>
+           <img src="https://assets.www.happyfox.com/v2/images/keep_everything.svg" alt="ERROR">
+       </div>
+       <div>
+           <div>
+               <p>
+                   “We consider HappyFox a one-stop shop for help desk software to support our global customer network.”
+               </p>
+           </div>
+           <div>
+               <p>Martin Hartvigsen</p>
+               <p>Director, Global Technical Support at Jabra GN</p>
+           </div>
+       </div>
+   </div>
+   <div>
+     <button>View all customer stories</button>
+     <button class="getDemo">Get a Demo</button>
+   </div>
+
 
     <!-- Home Page Block_6 -->
     <div id="block_6">
@@ -254,7 +290,7 @@
           <!-- COMPANY -->
           <div>
             <h5>COMPANY</h5>
-            <p><a href="">About Us</a></p>
+            <p><a href="about.html">About Us</a></p>
             <p><a href="">Our Customers</a></p>
             <p><a href="">Jobs</a></p>
             <p><a href="">Press & Media</a></p>
@@ -387,6 +423,8 @@
       </div>
     </div>
   </body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>
 
 <script src="./Scripts/block.js"></script>
@@ -403,6 +441,7 @@
   getDemo[0].addEventListener("click", mygetDemo);
   getDemo[1].addEventListener("click", mygetDemo);
   getDemo[2].addEventListener("click", mygetDemo);
+  getDemo[3].addEventListener("click", mygetDemo);
   function mygetDemo(event) {
     event.preventDefault();
     console.log("going to Demo Page");

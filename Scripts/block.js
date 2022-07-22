@@ -15,6 +15,69 @@ block_4.forEach(function (ele) {
     document.querySelector("#block_4>div").append(div_main);
 })
 
+// block_55
+  // catching all element
+  let image = document.querySelector("#block_55>div>img");
+  // console.log(image)
+  let quotes = document.querySelector("#block_55>div:nth-child(2)>div:first-child>p");
+  // console.log(quotes);
+  let name = document.querySelector("#block_55>div:nth-child(2)>div:last-child>p:first-child");
+  // console.log(name);  
+  let position = document.querySelector("#block_55>div:nth-child(2)>div:last-child>p:last-child");
+  // console.log(position)
+
+  let block_55Arr = [
+    {
+      image: "https://assets.www.happyfox.com/v2/images/keep_everything.svg",
+      quotes:
+        "“We consider HappyFox a one-stop shop for help desk software to support our global customer network.”",
+      name: "Martin Hartvigsen",
+      position: "Director, Global Technical Support at Jabra GN",
+    },
+    {
+      image: "https://assets.www.happyfox.com/v2/images/stay_control.svg",
+      quotes:
+        "“We LOVE HappyFox. It has changed our work lives. Support requests no longer fall through the cracks and get lost in an email or some random spreadsheet.”",
+      name: "Bill Bates",
+      position: "Director of Technology - Pinewood Private School",
+    },
+
+    {
+      image: "https://assets.www.happyfox.com/v2/images/things_fast.svg",
+      quotes:
+        "“With 95% of the support tickets being responded to within 2 hours. Our customers are impressed!”",
+      name: "James Powell",
+      position: "Director &amp; IT Business Consultant - FatCat IT",
+    },
+  ];
+
+// catching click part :- Slider 1
+let slider1 = document.getElementById("slider1").addEventListener("click",function(){
+  image.src = block_55Arr[0].image;
+  // console.log(image.src)
+  quotes.innerHTML = block_55Arr[0].quotes;
+  name.innerHTML = block_55Arr[0].name;
+  position.innerHTML = block_55Arr[0].position; 
+})
+
+// catching click part :- Slider 2
+let slider2 = document.getElementById("slider2").addEventListener("click",function(){
+  image.src = block_55Arr[1].image;
+  // console.log(image.src)
+  quotes.innerHTML = block_55Arr[1].quotes;
+  name.innerHTML = block_55Arr[1].name;
+  position.innerHTML = block_55Arr[1].position; 
+})
+
+// catching click part :- Slider 3
+let slider3 = document.getElementById("slider3").addEventListener("click",function(){
+  image.src = block_55Arr[2].image;
+  // console.log(image.src)
+  quotes.innerHTML = block_55Arr[2].quotes;
+  name.innerHTML = block_55Arr[2].name;
+  position.innerHTML = block_55Arr[2].position; 
+})
+
 
 
 // home page block 6

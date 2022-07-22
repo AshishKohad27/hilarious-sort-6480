@@ -165,10 +165,7 @@ form + div p + p {
     height: 0;
   }
   #overlap{
-    height: 120px;
-    top: 650px;
-    left: 200px;
-    z-index: -1;
+   display: none;
   }
 
 }
