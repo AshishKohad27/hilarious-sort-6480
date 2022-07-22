@@ -116,3 +116,13 @@
       margin: auto;
       margin-top: 80px;
 }
+
+@media all and (min-width: 160px) and (max-width:768px) {
+    #block_7>div {
+        width: 550px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+}

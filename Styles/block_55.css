@@ -1,0 +1,101 @@
+     #block_55-slider{
+        width: 80vw;
+        background-color: #f2f2f2;
+        margin: auto;
+        border-bottom: 1px solid grey;
+     }
+    #block_55-slider>div{
+        width: 57vw;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 0px;
+        text-align: center;
+        font-size: 1rem;
+        font-family: sans-serif;
+        color: grey;
+      }
+      #block_55-slider>div>div{
+        margin: auto;
+        padding: 0px 40px;
+        padding-top: 55px;
+      }
+      #block_55-slider>div>div:hover{
+        border-bottom: 2px solid red; 
+        margin-bottom: -2px; 
+        color: black;
+      }
+      #block_55{
+        background-color: #eeeeee;
+        width: 80vw;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 70px 130px 20px 130px;
+        font-family: sans-serif;
+      }
+      #block_55>div:nth-child(1) img{
+        width: 510px;
+        margin-top: 10px;
+      }
+      #block_55>div:nth-child(2)>div:first-child{
+        font-size: 20px;
+        color: #323643;
+        margin-top: 90px;
+      }
+      #block_55>div:nth-child(2)>div:last-child>p{
+        margin-top: 28px;
+        color: #6d717e;
+      }
+      #block_55>div:nth-child(2)>div:last-child>p+p{
+        margin-top: -10px;
+      }
+
+      /* buttons */
+      #block_55+div{
+      background-color: #eeeeee;
+      height: 120px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 80px;
+  }
+  #block_55+div button{
+      border-radius: 5px;
+      border: 0px;
+      color: white;
+      padding: 14px 30px;
+      font-size: 14px;
+      font-weight: bold;
+  }
+  #block_55+div button:first-child{
+      background-color: #323643;
+      margin-right: 40px;
+  }
+  #block_55+div button:last-child{
+      background-color: #d4450e;
+      margin-left: 40px;
+  }
+  #block_55+div button:first-child:hover{
+      background-color: white;
+      color: black;
+      font-weight: 100;
+      border: 1px solid black ;
+
+  }
+  #block_55+div button:last-child:hover{
+      margin-bottom: -2px;
+      background-color: rgba(230, 128, 56 , 0.5px);
+      background-color: rgb(230, 128, 56);
+  }
+
+  @media all and (min-width: 160px) and (max-width:768px) {
+    #block_55{
+        width: 400px;
+        display: grid;
+        margin-left: -50px;
+        grid-template-columns: repeat(1,1fr);
+        /* background-color: #d4450e; */
+      }
+  
+  }

@@ -39,3 +39,9 @@
   a:hover {
     color: white;
   }
+  @media all and (min-width: 160px) and (max-width:768px) {
+    #homefooter{
+      display: none;
+    }
+
+  }
