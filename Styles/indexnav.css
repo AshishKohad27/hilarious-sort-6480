@@ -77,28 +77,28 @@
   font-weight: bold;
   color: white;
 }
-@media all and (min-width: 160px) and (max-width:768px) {
+@media all and (min-width: 160px) and (max-width: 768px) {
   .Navbar1 {
     width: 50vw;
   }
-  .Navbar1 > div>div:nth-child(2) {
+  .Navbar1 > div > div:nth-child(2) {
     display: none;
   }
-  
-  .Navbar1 > div>div:nth-child(3) {
+
+  .Navbar1 > div > div:nth-child(3) {
     display: none;
   }
-  .Navbar1 > div>div:nth-child(4) {
+  .Navbar1 > div > div:nth-child(4) {
     display: none;
   }
-  .Navbar1 > div>div:nth-child(1) {
-   margin-left: -80px;
+  .Navbar1 > div > div:nth-child(1) {
+    margin-left: -80px;
   }
-  #login{
+  #login {
     margin-right: 60px;
   }
   #Navbar2 {
-   display: none;
+    display: none;
   }
   #Navbar2 > div:last-child a {
     display: none;

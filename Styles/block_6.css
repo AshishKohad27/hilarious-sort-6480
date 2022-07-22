@@ -14,7 +14,7 @@
   height: 100px;
   width: 100vw;
 
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   position: absolute;
   z-index: 10;
   top: -70px;
@@ -35,7 +35,7 @@
 #block_6 #curved2 {
   width: 1200px;
   height: 200px;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   position: absolute;
   bottom: -140px;
   left: 270px;
@@ -121,7 +121,7 @@
   font-weight: 100;
 }
 
-@media all and (min-width: 160px) and (max-width:768px){
+@media all and (min-width: 160px) and (max-width: 768px) {
   #block_6 > div {
     width: 500px;
     margin: auto;
@@ -129,10 +129,10 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
   }
-  
+
   #block_6 #curved1,
-  #block_6 #angle ,
-  #block_6 #curved2  {
+  #block_6 #angle,
+  #block_6 #curved2 {
     display: none;
   }
 }

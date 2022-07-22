@@ -59,8 +59,8 @@
 #bottomfotter > div:nth-child(2) > div {
   width: 35px;
 }
-@media all and (min-width: 160px) and (max-width:768px) {
-  #bottom{
+@media all and (min-width: 160px) and (max-width: 768px) {
+  #bottom {
     width: 100vw;
   }
   #bottom > div:first-child {

@@ -116,10 +116,10 @@ form + div p + p {
 }
 
 /* overlap */
-#overlap{
+#overlap {
   width: 300px;
   height: 180px;
-  background-color: rgba(235, 235, 235,0.95);
+  background-color: rgba(235, 235, 235, 0.95);
   position: absolute;
   top: 150px;
   left: 730px;
@@ -127,36 +127,36 @@ form + div p + p {
   font-family: sans-serif;
   border-radius: 10px;
 }
-#overlap>div:nth-child(1){
+#overlap > div:nth-child(1) {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   /* background-color: aqua; */
   /* display: flex;    */
   align-items: center;
   padding-top: 15px;
 }
-#overlap>div:nth-child(1) p{
+#overlap > div:nth-child(1) p {
   width: 20px;
   padding: 8px 12px;
   background-color: #f16631;
   font-size: 10px;
   border-radius: 5px;
   font-weight: bold;
-  color: white    ;
+  color: white;
 }
-#overlap>div>div:last-child{
+#overlap > div > div:last-child {
   margin-left: 80px;
 }
-#overlap h1{
+#overlap h1 {
   font-size: 20px;
 }
-#overlap>div:nth-child(3)>p{
+#overlap > div:nth-child(3) > p {
   font-size: 16px;
   color: #f16631;
 }
 
 /* media */
-@media all and (min-width: 160px) and (max-width:768px){
+@media all and (min-width: 160px) and (max-width: 768px) {
   #Middle {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -164,8 +164,7 @@ form + div p + p {
     width: 0;
     height: 0;
   }
-  #overlap{
-   display: none;
+  #overlap {
+    display: none;
   }
-
 }
