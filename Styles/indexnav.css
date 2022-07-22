@@ -1,11 +1,12 @@
 .Navbar1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: auto;
+  width: 100vw;
   margin: auto;
   font-size: 14px;
   display: flex;
   justify-content: space-between;
+  /* align-items: center ; */
   /* height: 60px; */
 }
 
@@ -17,6 +18,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 10px;
+  height: 28px;
   gap: 60px;
   display: flex;
   justify-content: space-between;
@@ -35,26 +37,42 @@
 }
 
 .Navbar1 a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  border-radius: 10px;
+  /* background-color: #f16631; */
+  border-radius: 10px;
+  height: 18px;
+  padding: 10px 20px 10px 20px;
+  margin-top: -8px;
   color: grey;
 }
-
+.Navbar1 a:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-weight: bold;
+  color: #f16631;
+}
 #Navbar1 {
   padding-top: 2px;
 }
 
 #Navbar2 {
+  background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin-top: 5px;
   height: 45px;
   padding-top: 2px;
+  position: sticky;
+  top: 0px;
+  z-index: 250;
 }
 
 #Navbar2 > div:last-child a {
   background-color: #f16631;
   border-radius: 10px;
-  height: 28px;
-  padding: 10px 20px 0px 20px;
+  height: 18px;
+  padding: 10px 20px 10px 20px;
   margin-top: -8px;
   font-weight: bold;
   color: white;
