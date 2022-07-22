@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+script<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -24,6 +24,14 @@
       font-family: sans-serif;
       font-size: 1rem;
     }
+    #block_1 button > a {
+      color: white;
+      font-weight: bold;
+    }
+    #block_1 button:hover {
+      background-color: rgb(216, 178, 108);
+      color: black;
+    }
   </style>
 
   <body>
@@ -32,8 +40,9 @@
       <div>
         <div>
           <img
+            id="homecoming"
             src="https://assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg"
-            alt=""
+            alt="1"
           />
         </div>
 
@@ -51,7 +60,7 @@
       </div>
 
       <div id="login">
-        <a href="">Log In</a>
+        <a href="login.html">Log In</a>
       </div>
     </div>
 
@@ -77,7 +86,7 @@
         </div>
       </div>
       <div>
-        <a href="">Get a Demo</a>
+        <a class="getDemo" href="">Get a Demo</a>
       </div>
     </div>
 
@@ -88,7 +97,7 @@
       <p>Deliver outstanding support and achieve new goals with HappyFox.</p>
       <div>
         <input type="email" value="Enter your work email" />
-        <button>GET A DEMO</button>
+        <button><a href="getdemo.html">GET A DEMO</a></button>
       </div>
       <!-- <p>
       By submitting, you agree to HappyFox’s Privacy Policy.
@@ -145,7 +154,7 @@
       <h1>fast-changing global businesses</h1>
     </div>
     <div>
-      <button>Get a Demo</button>
+      <button class="getDemo">Get a Demo</button>
     </div>
 
     <!-- Home Page Block_8 -->
@@ -155,7 +164,7 @@
     </div>
     <div>
       <button>View all integrations</button>
-      <button>Get a Demo</button>
+      <button class="getDemo">Get a Demo</button>
     </div>
 
     <!-- Home Page Block_9 -->
@@ -379,5 +388,38 @@
     </div>
   </body>
 </html>
+
 <script src="./Scripts/block.js"></script>
 <script src="./Scripts/homefooter.js"></script>
+<script>
+  // back to home page
+  document.querySelector("#homecoming").addEventListener("click", myHome);
+  function myHome(event) {
+    console.log("i am back to home page");
+    window.location.href = "index.html";
+  }
+  // going to getDemo PAGE
+  let getDemo = document.querySelectorAll(".getDemo");
+  getDemo[0].addEventListener("click", mygetDemo);
+  getDemo[1].addEventListener("click", mygetDemo);
+  getDemo[2].addEventListener("click", mygetDemo);
+  function mygetDemo(event) {
+    event.preventDefault();
+    console.log("going to Demo Page");
+    window.location.href = "getdemo.html";
+  }
+</script>
+<script>
+  //  CHECKING WE LOG OR NOT for NavBar
+  let userName = JSON.parse(localStorage.getItem("UserName"));
+  let navbarFeature = document.querySelectorAll(".Navbar1>div>div>a");
+  let flag = 0;
+  navbarFeature.forEach(function (ele) {
+    // console.log(ele);
+    if (userName === null && flag === 0) {
+      alert("Please Login First");
+      console.log(" I am here in NAVBAR");
+      flag++;
+    }
+  });
+</script>
