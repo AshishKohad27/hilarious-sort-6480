@@ -26,7 +26,8 @@
     <div class="Navbar1" id="Navbar1">
       <div>
         <div>
-          <img id="homecoming"
+          <img
+            id="homecoming"
             src="https://assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg"
             alt=""
           />
@@ -274,11 +275,18 @@
   }
 
   // going to Home page
-  document.querySelector("#homecoming").addEventListener("click",myHome);
-  function myHome(event){
-    console.log("i am back to home page")
-    window.location.href = "index.html"
+  document.querySelector("#homecoming").addEventListener("click", myHome);
+  function myHome(event) {
+    console.log("i am back to home page");
+    window.location.href = "index.html";
   }
+
+  // going to Demo Page
+  document.querySelector(".getDemo").addEventListener("click", function (ele) {
+    ele.preventDefault();
+    console.log("i am in demo page");
+    window.location.href = "getdemo.html";
+  });
 
   let getdetails = JSON.parse(localStorage.getItem("Login-details")) || [];
   console.log(getdetails);
