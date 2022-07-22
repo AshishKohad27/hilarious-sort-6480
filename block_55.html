@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>block_55-Slider of div</title>
-    <link rel="stylesheet" href="./Styles/block_55.css">
-  </head>
-  <body>
 
-    <div id="block_55-slider">
-       <div>
-        <div id="slider1">
-            <p>Keep everything together</p>
-        </div>
-        <div id="slider2">
-            <p>Stay in Control</p>
-        </div>
-        <div id="slider3">
-            <p>Get things done, fast</p>
-        </div>
-       </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>block_55-Slider of div</title>
+  <link rel="stylesheet" href="./Styles/block_55.css">
+</head>
+
+<body>
+
+  <div id="block_55-slider">
+    <div>
+      <div id="slider1">
+        <p>Keep everything together</p>
+      </div>
+      <div id="slider2">
+        <p>Stay in Control</p>
+      </div>
+      <div id="slider3">
+        <p>Get things done, fast</p>
+      </div>
     </div>
-    
-    <div id="block_55">
-        <div>
-            <img src="https://assets.www.happyfox.com/v2/images/keep_everything.svg" alt="ERROR">
-        </div>
-        <div>
-            <div>
-                <p>
-                    “We consider HappyFox a one-stop shop for help desk software to support our global customer network.”
-                </p>
-            </div>
-            <div>
-                <p>Martin Hartvigsen</p>
-                <p>Director, Global Technical Support at Jabra GN</p>
-            </div>
-        </div>
+  </div>
+
+  <div id="block_55">
+    <div>
+      <img src="https://assets.www.happyfox.com/v2/images/keep_everything.svg" alt="ERROR">
     </div>
     <div>
-      <button>View all customer stories</button>
-      <button class="getDemo">Get a Demo</button>
+      <div>
+        <p>
+          “We consider HappyFox a one-stop shop for help desk software to support our global customer network.”
+        </p>
+      </div>
+      <div>
+        <p>Martin Hartvigsen</p>
+        <p>Director, Global Technical Support at Jabra GN</p>
+      </div>
     </div>
+  </div>
+  <div>
+    <button>View all customer stories</button>
+    <button class="getDemo">Get a Demo</button>
+  </div>
 
-  </body>
+</body>
+
 </html>
 <script>
 
@@ -84,30 +87,30 @@
     },
   ];
 
-// catching click part :- Slider 1
-let slider1 = document.getElementById("slider1").addEventListener("click",function(){
-  image.src = block_55Arr[0].image;
-  // console.log(image.src)
-  quotes.innerHTML = block_55Arr[0].quotes;
-  name.innerHTML = block_55Arr[0].name;
-  position.innerHTML = block_55Arr[0].position; 
-})
+  // catching click part :- Slider 1
+  let slider1 = document.getElementById("slider1").addEventListener("click", function () {
+    image.src = block_55Arr[0].image;
+    // console.log(image.src)
+    quotes.innerHTML = block_55Arr[0].quotes;
+    name.innerHTML = block_55Arr[0].name;
+    position.innerHTML = block_55Arr[0].position;
+  })
 
-// catching click part :- Slider 2
-let slider2 = document.getElementById("slider2").addEventListener("click",function(){
-  image.src = block_55Arr[1].image;
-  // console.log(image.src)
-  quotes.innerHTML = block_55Arr[1].quotes;
-  name.innerHTML = block_55Arr[1].name;
-  position.innerHTML = block_55Arr[1].position; 
-})
+  // catching click part :- Slider 2
+  let slider2 = document.getElementById("slider2").addEventListener("click", function () {
+    image.src = block_55Arr[1].image;
+    // console.log(image.src)
+    quotes.innerHTML = block_55Arr[1].quotes;
+    name.innerHTML = block_55Arr[1].name;
+    position.innerHTML = block_55Arr[1].position;
+  })
 
-// catching click part :- Slider 3
-let slider3 = document.getElementById("slider3").addEventListener("click",function(){
-  image.src = block_55Arr[2].image;
-  // console.log(image.src)
-  quotes.innerHTML = block_55Arr[2].quotes;
-  name.innerHTML = block_55Arr[2].name;
-  position.innerHTML = block_55Arr[2].position; 
-})
+  // catching click part :- Slider 3
+  let slider3 = document.getElementById("slider3").addEventListener("click", function () {
+    image.src = block_55Arr[2].image;
+    // console.log(image.src)
+    quotes.innerHTML = block_55Arr[2].quotes;
+    name.innerHTML = block_55Arr[2].name;
+    position.innerHTML = block_55Arr[2].position;
+  })
 </script>

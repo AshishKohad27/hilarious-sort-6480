@@ -1,427 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About HappyFox</title>
-    <link rel="stylesheet" href="./Styles/indexnav.css" />
-    <link rel="stylesheet" href="./Styles/loginbottom.css" />
-  </head>
-  <style>
-    #about1 > img {
-      width: 100vw;
-      height: 75vh;
-      position: relative;
-    }
 
-    #about1 > div {
-      width: 100vw;
-      height: 75vh;
-    }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About HappyFox</title>
+  <link rel="stylesheet" href="./Styles/indexnav.css" />
+  <link rel="stylesheet" href="./Styles/loginbottom.css" />
+</head>
+<style>
+  #about1>img {
+    width: 100vw;
+    height: 75vh;
+    position: relative;
+  }
 
-    #about1 > div {
-      background-color: rgba(0, 0, 0, 0.9);
-      position: absolute;
-      z-index: 2;
-      top: 60px;
-      font-family: sans-serif;
-      color: white;
-    }
+  #about1>div {
+    width: 100vw;
+    height: 75vh;
+  }
 
-    #about1 > div > h1 {
-      text-align: center;
-      margin-top: 240px;
-      font-size: 48px;
-      font-weight: 100;
-    }
+  #about1>div {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    font-family: sans-serif;
+    color: white;
+  }
 
-    #about1 > div > p {
-      font-size: 24px;
-      text-align: center;
-      margin-top: -15px;
-    }
+  #about1>div>h1 {
+    text-align: center;
+    margin-top: 240px;
+    font-size: 48px;
+    font-weight: 100;
+  }
 
-    .span {
-      color: #d50000;
-    }
+  #about1>div>p {
+    font-size: 24px;
+    text-align: center;
+    margin-top: -15px;
+  }
 
-    .span:hover {
-      text-decoration: underline;
-    }
+  .span {
+    color: #d50000;
+  }
 
-    .about7 {
-      width: 100vw;
-      background-color: #181c20;
-    }
+  .span:hover {
+    text-decoration: underline;
+  }
 
-    .about {
-      width: 55vw;
-      margin: auto;
-      font-family: sans-serif;
-    }
+  .about7 {
+    width: 100vw;
+    background-color: #181c20;
+  }
 
-    .about > h1 {
-      color: #212529;
-      font-size: 30px;
-      text-align: center;
-      margin-top: 70px;
-    }
+  .about {
+    width: 55vw;
+    margin: auto;
+    font-family: sans-serif;
+  }
 
-    .about > p {
-      color: #4c4c4c;
-      font-size: 18px;
-      line-height: 30px;
-    }
+  .about>h1 {
+    color: #212529;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
 
-    .about p ~ p {
-      margin-top: 50px;
-    }
+  .about>p {
+    color: #4c4c4c;
+    font-size: 18px;
+    line-height: 30px;
+  }
 
-    #about5 > div {
-      margin-top: 50px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 40px 120px;
-    }
+  .about p~p {
+    margin-top: 50px;
+  }
 
-    #about5 > div img {
-      height: 36px;
-    }
+  #about5>div {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 120px;
+  }
 
-    #about6 > div {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 35px;
-      margin-bottom: 65px;
-    }
+  #about5>div img {
+    height: 36px;
+  }
 
-    #about6 > div > div:nth-child(1) img {
-      width: 144px;
-      margin-top: 50px;
-    }
+  #about6>div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 35px;
+    margin-bottom: 65px;
+  }
 
-    #about7 {
-      width: 60vw;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      margin: auto;
-    }
+  #about6>div>div:nth-child(1) img {
+    width: 144px;
+    margin-top: 50px;
+  }
 
-    #about7 h5 {
-      margin-top: 50px;
-    }
+  #about7 {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+  }
 
-    #about7 a {
-      text-decoration: none;
-      color: #a3a4a6;
-    }
+  #about7 h5 {
+    margin-top: 50px;
+  }
 
-    #about7 > div > h5 > a {
-      color: #ffffff;
-    }
-  </style>
+  #about7 a {
+    text-decoration: none;
+    color: #a3a4a6;
+  }
 
-  <body>
-    <!-- Navbar Section -->
-    <div class="Navbar1" id="Navbar1">
+  #about7>div>h5>a {
+    color: #ffffff;
+  }
+</style>
+
+<body>
+  <!-- Navbar Section -->
+  <div class="Navbar1" id="Navbar1">
+    <div>
+      <div>
+        <img id="homecoming" src="https://assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg" alt="1" />
+      </div>
+
+      <div>
+        <a href="">Customer Service</a>
+      </div>
+
+      <div>
+        <a href="">IT Support</a>
+      </div>
+
+      <div>
+        <a href="">Operation Support</a>
+      </div>
+    </div>
+
+    <div id="login">
+      <a href="login.html">Log In</a>
+    </div>
+  </div>
+
+  <div id="about1">
+    <img src="https://cdn.mos.cms.futurecdn.net/TqA7tPUjG6LjysnZrRj8nJ-1200-80.jpg" alt="" />
+    <div>
+      <h1>We are HappyFox</h1>
+      <p>The Complete Help Desk and Customer Support Suite of Products</p>
+    </div>
+  </div>
+
+  <div id="about2" class="about">
+    <h1>About HappyFox Inc</h1>
+    <p>
+      HappyFox, Inc is headquartered in Irvine, California. HappyFox is a
+      software-as-a-service (SaaS) support platform. We offer an
+      enterprise-grade help desk ticketing system and an intuitively designed
+      live chat software.
+    </p>
+    <p>
+      We serve over 12,000 companies in 70+ countries. HappyFox is used by
+      companies that span across education, media, e-commerce, retail,
+      information technology, manufacturing, non-profit, government and many
+      other verticals that have an internal or external support function.
+    </p>
+    <p>
+      <span class="span">HappyFox Help Desk</span> has been rated as the Best
+      Help Desk Software by PC Mag. <span class="span">HappyFox Chat</span> is
+      the top voted Live Chat Software at launch on the ProductHunt platform.
+    </p>
+  </div>
+
+  <div id="about3" class="about">
+    <h1>Our Vision</h1>
+    <p>
+      We believe in bringing “happy” back into the support function of any
+      organization. Our thoughtfully built applications are focused on agent
+      productivity and success.
+    </p>
+    <p>Happy Agents. Happy Customers.</p>
+  </div>
+
+  <div id="about4" class="about">
+    <h1>Company Leadership</h1>
+    <p>
+      Shalin Jain is the CEO of HappyFox Inc. He has over 16 years of
+      entrepreneurial experience and having worked with thousands of
+      companies, assisting them in implementing great support processes. He
+      has won several entrepreneurial awards including Pathfinders in 2013.
+    </p>
+  </div>
+
+  <div id="about5" class="about">
+    <h1>Our Product Suite</h1>
+    <div>
+      <div>
+        <img src="https://assets.www.happyfox.com/logo/product-logos/helpdesk.png" alt="" />
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/logo/product-logos/hf-chat.png" alt="" />
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/logo/product-logos/hf-chatbot.png" alt="" />
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/logo/product-logos/hf-bi.png" alt="" />
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/logo/product-logos/hf-workflows.png" alt="" />
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/logo/product-logos/hf-inappchat.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <div id="about6" class="about">
+    <h1>Awards & Recognition</h1>
+    <div>
+      <div>
+        <img src="https://assets.www.happyfox.com/logo/award-1.png" alt="" />
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/logo/2021-spring.svg" alt="" />
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/logo/2021-fall.svg" alt="" />
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/logo/2021-winter.svg" alt="" />
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/logo/2022-winter.svg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <div class="about7">
+    <div id="about7">
+      <div>
+        <h5><a href="">COMPANY</a></h5>
+        <p><a href=""> About Us </a></p>
+        <p><a href="">Our Customers </a></p>
+        <p><a href="">Jobs </a></p>
+        <p><a href="">Press & Media</a></p>
+      </div>
+      <div>
+        <h5><a href="">RESOURCES</a></h5>
+        <p><a href="">E-Books & Guides</a></p>
+        <p><a href="">Webinars</a></p>
+        <p><a href="">Customer Support Glossary</a></p>
+        <p><a href="">Customer Stories</a></p>
+        <p><a href="">Videos</a></p>
+        <p><a href="">Blog</a></p>
+      </div>
+      <div>
+        <h5><a href="">CONTACT US</a></h5>
+        <p><a href="">Contact Sales</a></p>
+        <p><a href="">Get Support</a></p>
+        <p><a href="">1-949-535-2220</a></p>
+        <p><a href="">support@happyfox.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Section -->
+  <div id="bottom">
+    <div>
+      <div>
+        <img src="	https://assets.www.happyfox.com/v2/images/bottom-footer/helpdesk-footer.svg" alt="" />
+        <p>Help Desk</p>
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/hf-assist-ai-footer.svg" alt="" />
+        <p>Assist AI</p>
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/livechat-footer.svg" alt="" />
+        <p>Live Chat</p>
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/chatbot-footer.svg" alt="" />
+        <p>Chatbot</p>
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/bi-footer.svg" alt="" />
+        <p>Business Intelligence</p>
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/workflows-footer.svg" alt="" />
+        <p>Workflows</p>
+      </div>
+      <div>
+        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/inapp-chat-footer.svg" alt="" />
+        <p>In-App Chat</p>
+      </div>
+    </div>
+
+    <div id="bottomfotter">
       <div>
         <div>
-          <img
-            id="homecoming"
-            src="https://assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg"
-            alt="1"
-          />
+          <p>
+            <img src="https://assets.www.happyfox.com/img/lang-icon.svg" alt="" />
+            English
+          </p>
         </div>
-
         <div>
-          <a href="">Customer Service</a>
+          <p>Terms</p>
         </div>
-
         <div>
-          <a href="">IT Support</a>
+          <p>Privacy</p>
         </div>
-
         <div>
-          <a href="">Operation Support</a>
+          <p>Status</p>
+        </div>
+        <div>
+          <p>Security</p>
+        </div>
+        <div>
+          <p>GDPR</p>
         </div>
       </div>
 
-      <div id="login">
-        <a href="login.html">Log In</a>
-      </div>
-    </div>
-
-    <div id="about1">
-      <img
-        src="https://cdn.mos.cms.futurecdn.net/TqA7tPUjG6LjysnZrRj8nJ-1200-80.jpg"
-        alt=""
-      />
-      <div>
-        <h1>We are HappyFox</h1>
-        <p>The Complete Help Desk and Customer Support Suite of Products</p>
-      </div>
-    </div>
-
-    <div id="about2" class="about">
-      <h1>About HappyFox Inc</h1>
-      <p>
-        HappyFox, Inc is headquartered in Irvine, California. HappyFox is a
-        software-as-a-service (SaaS) support platform. We offer an
-        enterprise-grade help desk ticketing system and an intuitively designed
-        live chat software.
-      </p>
-      <p>
-        We serve over 12,000 companies in 70+ countries. HappyFox is used by
-        companies that span across education, media, e-commerce, retail,
-        information technology, manufacturing, non-profit, government and many
-        other verticals that have an internal or external support function.
-      </p>
-      <p>
-        <span class="span">HappyFox Help Desk</span> has been rated as the Best
-        Help Desk Software by PC Mag. <span class="span">HappyFox Chat</span> is
-        the top voted Live Chat Software at launch on the ProductHunt platform.
-      </p>
-    </div>
-
-    <div id="about3" class="about">
-      <h1>Our Vision</h1>
-      <p>
-        We believe in bringing “happy” back into the support function of any
-        organization. Our thoughtfully built applications are focused on agent
-        productivity and success.
-      </p>
-      <p>Happy Agents. Happy Customers.</p>
-    </div>
-
-    <div id="about4" class="about">
-      <h1>Company Leadership</h1>
-      <p>
-        Shalin Jain is the CEO of HappyFox Inc. He has over 16 years of
-        entrepreneurial experience and having worked with thousands of
-        companies, assisting them in implementing great support processes. He
-        has won several entrepreneurial awards including Pathfinders in 2013.
-      </p>
-    </div>
-
-    <div id="about5" class="about">
-      <h1>Our Product Suite</h1>
       <div>
         <div>
-          <img
-            src="https://assets.www.happyfox.com/logo/product-logos/helpdesk.png"
-            alt=""
-          />
+          <img src="https://assets.www.happyfox.com/v2/images/facebook-logo-button1x.svg" alt="" />
         </div>
         <div>
-          <img
-            src="https://assets.www.happyfox.com/logo/product-logos/hf-chat.png"
-            alt=""
-          />
+          <img src="https://assets.www.happyfox.com/v2/images/twitter1x.svg" alt="" />
         </div>
         <div>
-          <img
-            src="https://assets.www.happyfox.com/logo/product-logos/hf-chatbot.png"
-            alt=""
-          />
+          <img src="https://assets.www.happyfox.com/v2/images/youtube1x.svg" alt="" />
         </div>
         <div>
-          <img
-            src="https://assets.www.happyfox.com/logo/product-logos/hf-bi.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://assets.www.happyfox.com/logo/product-logos/hf-workflows.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://assets.www.happyfox.com/logo/product-logos/hf-inappchat.png"
-            alt=""
-          />
+          <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/linkedin-logo-button.svg" alt="" />
         </div>
       </div>
-    </div>
 
-    <div id="about6" class="about">
-      <h1>Awards & Recognition</h1>
       <div>
-        <div>
-          <img src="https://assets.www.happyfox.com/logo/award-1.png" alt="" />
-        </div>
-        <div>
-          <img
-            src="https://assets.www.happyfox.com/logo/2021-spring.svg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://assets.www.happyfox.com/logo/2021-fall.svg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://assets.www.happyfox.com/logo/2021-winter.svg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="https://assets.www.happyfox.com/logo/2022-winter.svg"
-            alt=""
-          />
-        </div>
+        <p>Copyright ©2022 HappyFox Inc. All rights reserved.</p>
       </div>
     </div>
+  </div>
+</body>
 
-    <div class="about7">
-      <div id="about7">
-        <div>
-          <h5><a href="">COMPANY</a></h5>
-          <p><a href=""> About Us </a></p>
-          <p><a href="">Our Customers </a></p>
-          <p><a href="">Jobs </a></p>
-          <p><a href="">Press & Media</a></p>
-        </div>
-        <div>
-          <h5><a href="">RESOURCES</a></h5>
-          <p><a href="">E-Books & Guides</a></p>
-          <p><a href="">Webinars</a></p>
-          <p><a href="">Customer Support Glossary</a></p>
-          <p><a href="">Customer Stories</a></p>
-          <p><a href="">Videos</a></p>
-          <p><a href="">Blog</a></p>
-        </div>
-        <div>
-          <h5><a href="">CONTACT US</a></h5>
-          <p><a href="">Contact Sales</a></p>
-          <p><a href="">Get Support</a></p>
-          <p><a href="">1-949-535-2220</a></p>
-          <p><a href="">support@happyfox.com</a></p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bottom Section -->
-    <div id="bottom">
-      <div>
-        <div>
-          <img
-            src="	https://assets.www.happyfox.com/v2/images/bottom-footer/helpdesk-footer.svg"
-            alt=""
-          />
-          <p>Help Desk</p>
-        </div>
-        <div>
-          <img
-            src="https://assets.www.happyfox.com/v2/images/bottom-footer/hf-assist-ai-footer.svg"
-            alt=""
-          />
-          <p>Assist AI</p>
-        </div>
-        <div>
-          <img
-            src="https://assets.www.happyfox.com/v2/images/bottom-footer/livechat-footer.svg"
-            alt=""
-          />
-          <p>Live Chat</p>
-        </div>
-        <div>
-          <img
-            src="https://assets.www.happyfox.com/v2/images/bottom-footer/chatbot-footer.svg"
-            alt=""
-          />
-          <p>Chatbot</p>
-        </div>
-        <div>
-          <img
-            src="https://assets.www.happyfox.com/v2/images/bottom-footer/bi-footer.svg"
-            alt=""
-          />
-          <p>Business Intelligence</p>
-        </div>
-        <div>
-          <img
-            src="https://assets.www.happyfox.com/v2/images/bottom-footer/workflows-footer.svg"
-            alt=""
-          />
-          <p>Workflows</p>
-        </div>
-        <div>
-          <img
-            src="https://assets.www.happyfox.com/v2/images/bottom-footer/inapp-chat-footer.svg"
-            alt=""
-          />
-          <p>In-App Chat</p>
-        </div>
-      </div>
-
-      <div id="bottomfotter">
-        <div>
-          <div>
-            <p>
-              <img
-                src="https://assets.www.happyfox.com/img/lang-icon.svg"
-                alt=""
-              />
-              English
-            </p>
-          </div>
-          <div>
-            <p>Terms</p>
-          </div>
-          <div>
-            <p>Privacy</p>
-          </div>
-          <div>
-            <p>Status</p>
-          </div>
-          <div>
-            <p>Security</p>
-          </div>
-          <div>
-            <p>GDPR</p>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <img
-              src="https://assets.www.happyfox.com/v2/images/facebook-logo-button1x.svg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://assets.www.happyfox.com/v2/images/twitter1x.svg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://assets.www.happyfox.com/v2/images/youtube1x.svg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://assets.www.happyfox.com/v2/images/bottom-footer/linkedin-logo-button.svg"
-              alt=""
-            />
-          </div>
-        </div>
-
-        <div>
-          <p>Copyright ©2022 HappyFox Inc. All rights reserved.</p>
-        </div>
-      </div>
-    </div>
-  </body>
 </html>
 <script>
   // back to home page

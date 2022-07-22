@@ -1,30 +1,30 @@
 /* Home Page Block 5 */
-#block_5{
-    margin-top: -20px;
-    text-align: center;
+#block_5 {
+  margin-top: -20px;
+  text-align: center;
+}
+#block_5 > h1 {
+  font-size: 2rem;
+  padding-top: 55px;
+  font-weight: 200;
+  color: grey;
+}
+#block_5 > h1 + h1 {
+  font-weight: bold;
+  margin-top: -65px;
+  font-size: 34px;
+  color: #323643;
+}
+#block_5 > p {
+  width: 900px;
+  margin: auto;
+  line-height: 25px;
+  color: grey;
+  padding-bottom: 40px;
+}
+@media all and (min-width: 160px) and (max-width: 768px) {
+  #block_5 > p {
+    width: 500px;
+    /* background-color: lawngreen; */
   }
-  #block_5>h1{
-   font-size: 2rem;
-   padding-top: 55px;
-   font-weight: 200 ;
-   color: grey;
-  }
-  #block_5>h1+h1{
-    font-weight: bold;
-    margin-top: -65px;
-    font-size: 34px;
-    color: #323643;
-  }
-  #block_5>p{
-    width: 900px;
-    margin: auto;
-    line-height: 25px;
-    color: grey ;
-    padding-bottom: 40px;
-  }
-  @media all and (min-width: 160px) and (max-width:768px) {
-    #block_5>p{
-      width: 500px;
-      /* background-color: lawngreen; */
-    }
-  }
+}
