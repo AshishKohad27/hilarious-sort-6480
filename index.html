@@ -1,388 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./Styles/indexnav.css" />
+    <link rel="stylesheet" href="./Styles/block_1.css" />
+    <link rel="stylesheet" href="./Styles/block_2.css" />
+    <link rel="stylesheet" href="./Styles/block_3.css" />
+    <link rel="stylesheet" href="./Styles/block_4.css" />
+    <link rel="stylesheet" href="./Styles/block_5.css" />
+    <link rel="stylesheet" href="./Styles/block_55.css" />
+    <link rel="stylesheet" href="./Styles/block_6.css" />
+    <link rel="stylesheet" href="./Styles/block_7.css" />
+    <link rel="stylesheet" href="./Styles/block_8.css" />
+    <link rel="stylesheet" href="./Styles/block_9.css" />
+    <link rel="stylesheet" href="./Styles/loginbottom.css" />
+    <link rel="stylesheet" href="./Styles/homefooter.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home Page</title>
-  <link rel="stylesheet" href="./Styles/indexnav.css" />
-  <link rel="stylesheet" href="./Styles/block_1.css" />
-  <link rel="stylesheet" href="./Styles/block_2.css" />
-  <link rel="stylesheet" href="./Styles/block_3.css" />
-  <link rel="stylesheet" href="./Styles/block_4.css" />
-  <link rel="stylesheet" href="./Styles/block_5.css" />
-  <link rel="stylesheet" href="./Styles/block_55.css">
-  <link rel="stylesheet" href="./Styles/block_6.css" />
-  <link rel="stylesheet" href="./Styles/block_7.css" />
-  <link rel="stylesheet" href="./Styles/block_8.css" />
-  <link rel="stylesheet" href="./Styles/block_9.css" />
-  <link rel="stylesheet" href="./Styles/loginbottom.css" />
-  <link rel="stylesheet" href="./Styles/homefooter.css" />
-</head>
+  <style>
+    body {
+      font-family: sans-serif;
+      font-size: 1rem;
+      background-color: #eeeeee;
+    }
 
-<style>
-  body {
-    font-family: sans-serif;
-    font-size: 1rem;
-    background-color: #EEEEEE;
-  }
+    #block_1 button > a {
+      color: white;
+      font-weight: bold;
+    }
 
-  #block_1 button>a {
-    color: white;
-    font-weight: bold;
-  }
+    #block_1 button:hover {
+      background-color: rgb(216, 178, 108);
+      color: black;
+    }
 
-  #block_1 button:hover {
-    background-color: rgb(216, 178, 108);
-    color: black;
-  }
-</style>
+    #icons {
+      width: 50vw;
+      /* background-color: black; */
+      display: flex;
+      justify-content: end;
+    }
 
-<body>
-  <!-- Navbar Section -->
-  <div class="Navbar1" id="Navbar1">
-    <div>
+    #logout,
+    #message {
+      width: 55px;
+      height: 55px;
+      background-color: #4c29e7;
+      border-radius: 50px;
+      border: 5px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+    }
+
+    #logout > ion-icon,
+    #message > ion-icon {
+      width: 36px;
+      height: 36px;
+    }
+
+    #message {
+      margin-left: 20px;
+      right: 75px;
+      top: 540px;
+      color: white;
+    }
+
+    #logout {
+      right: 10px;
+      top: 540px;
+      color: white;
+    }
+    #logout:hover{
+      border: 5px solid #d50000;
+      background-color: wheat;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    #message:hover {
+      border: 5px solid lawngreen;
+      background-color: wheat;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    #logout > ion-icon:hover{
+      color: #d50000;
+    }
+
+    #message > ion-icon:hover {
+      color: lawngreen;
+    }
+  </style>
+
+  <body>
+    <!-- Navbar Section -->
+    <div class="Navbar1" id="Navbar1">
       <div>
-        <img id="homecoming" src="https://assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg" alt="1" />
+        <div>
+          <img
+            id="homecoming"
+            src="https://assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg"
+            alt="1"
+          />
+        </div>
+
+        <div>
+          <a href="">Customer Service</a>
+        </div>
+
+        <div>
+          <a href="">IT Support</a>
+        </div>
+
+        <div>
+          <a href="">Operation Support</a>
+        </div>
       </div>
 
-      <div>
-        <a href="">Customer Service</a>
-      </div>
-
-      <div>
-        <a href="">IT Support</a>
-      </div>
-
-      <div>
-        <a href="">Operation Support</a>
+      <div id="login">
+        <a href="login.html">Log In</a>
       </div>
     </div>
 
-    <div id="login">
-      <a href="login.html">Log In</a>
+    <div class="Navbar1" id="Navbar2">
+      <div>
+        <div>
+          <img
+            src="https://assets.www.happyfox.com/v2/images/site-nav/helpdesk-logo.svg"
+            alt=""
+          />
+        </div>
+        <div id="intoFeature">
+          <a href="">Feature</a>
+        </div>
+        <div>
+          <a href="">Solution</a>
+        </div>
+        <div>
+          <a href="">Price</a>
+        </div>
+        <div>
+          <a href="">Resources</a>
+        </div>
+      </div>
+      <div>
+        <a class="getDemo" href="">Get a Demo</a>
+      </div>
     </div>
-  </div>
-
-  <div class="Navbar1" id="Navbar2">
-    <div>
-      <div>
-        <img src="https://assets.www.happyfox.com/v2/images/site-nav/helpdesk-logo.svg" alt="" />
+    <!-- LogOut and MEssage -->
+    <div id="icons">
+      <div id="logout">
+        <ion-icon name="log-out-sharp"></ion-icon>
       </div>
-      <div>
-        <a href="feature.html">Feature</a>
-      </div>
-      <div>
-        <a href="">Solution</a>
-      </div>
-      <div>
-        <a href="">Price</a>
-      </div>
-      <div>
-        <a href="">Resources</a>
+      <div id="message">
+        <ion-icon name="chatbubble-sharp"></ion-icon>
       </div>
     </div>
-    <div>
-      <a class="getDemo" href="">Get a Demo</a>
-    </div>
-  </div>
-
-  <!-- Home Page Block 1 -->
-  <div id="block_1">
-    <h1>Get More Done with</h1>
-    <h1>a Modern Support Stack</h1>
-    <p>Deliver outstanding support and achieve new goals with HappyFox.</p>
-    <div>
-      <input type="email" value="Enter your work email" />
-      <button><a href="getdemo.html">GET A DEMO</a></button>
-    </div>
-    <!-- <p>
+    <!-- Home Page Block 1 -->
+    <div id="block_1">
+      <h1>Get More Done with</h1>
+      <h1>a Modern Support Stack</h1>
+      <p>Deliver outstanding support and achieve new goals with HappyFox.</p>
+      <div>
+        <input type="email" value="Enter your work email" />
+        <button><a href="getdemo.html">GET A DEMO</a></button>
+      </div>
+      <!-- <p>
       By submitting, you agree to HappyFox’s Privacy Policy.
     </p> -->
-  </div>
+    </div>
 
-  <!-- Home Page Block 2 -->
-  <div id="block_2"></div>
+    <!-- Home Page Block 2 -->
+    <div id="block_2"></div>
 
-  <!-- Home Page Block 3 -->
-  <div id="block_3">
-    <img src="https://assets.www.happyfox.com/v2/images/pcmag-new-2021.svg?r=1658320818654" alt="" />
-    <h1>Best Help Desk Software for 6 years in a row.</h1>
-    <p>
-      All-in-one <span>help desk ticketing system</span> that provides faster
-      and better support for your customers.
-    </p>
-    <button>Take a tour</button>
-  </div>
+    <!-- Home Page Block 3 -->
+    <div id="block_3">
+      <img
+        src="https://assets.www.happyfox.com/v2/images/pcmag-new-2021.svg?r=1658320818654"
+        alt=""
+      />
+      <h1>Best Help Desk Software for 6 years in a row.</h1>
+      <p>
+        All-in-one <span>help desk ticketing system</span> that provides faster
+        and better support for your customers.
+      </p>
+      <button>Take a tour</button>
+    </div>
 
-  <!-- Home Page Block_4 -->
-  <div id="block_4">
-    <p>Trusted by Industry-Leading Companies</p>
-    <div></div>
-  </div>
+    <!-- Home Page Block_4 -->
+    <div id="block_4">
+      <p>Trusted by Industry-Leading Companies</p>
+      <div></div>
+    </div>
 
-  <!-- Home Page Block_5 -->
-  <div id="block_5">
-    <h1>Provide Exceptional</h1>
-    <h1>Customer Support. Everyday.</h1>
-    <p>
-      Meet HappyFox, a practical help desk and customer support software
-      solution. Reduce chaos and bring order to your support process with a
-      robust support ticket system, self-service knowledge base and community
-      forums.
-    </p>
-  </div>
-  <div id="block_55-slider">
+    <!-- Home Page Block_5 -->
+    <div id="block_5">
+      <h1>Provide Exceptional</h1>
+      <h1>Customer Support. Everyday.</h1>
+      <p>
+        Meet HappyFox, a practical help desk and customer support software
+        solution. Reduce chaos and bring order to your support process with a
+        robust support ticket system, self-service knowledge base and community
+        forums.
+      </p>
+    </div>
+    <div id="block_55-slider">
+      <div>
+        <div id="slider1">
+          <p>Keep everything together</p>
+        </div>
+        <div id="slider2">
+          <p>Stay in Control</p>
+        </div>
+        <div id="slider3">
+          <p>Get things done, fast</p>
+        </div>
+      </div>
+    </div>
+    <div id="block_55">
+      <div>
+        <img
+          src="https://assets.www.happyfox.com/v2/images/keep_everything.svg"
+          alt="ERROR"
+        />
+      </div>
+      <div>
+        <div>
+          <p>
+            “We consider HappyFox a one-stop shop for help desk software to
+            support our global customer network.”
+          </p>
+        </div>
+        <div>
+          <p>Martin Hartvigsen</p>
+          <p>Director, Global Technical Support at Jabra GN</p>
+        </div>
+      </div>
+    </div>
     <div>
-      <div id="slider1">
-        <p>Keep everything together</p>
-      </div>
-      <div id="slider2">
-        <p>Stay in Control</p>
-      </div>
-      <div id="slider3">
-        <p>Get things done, fast</p>
-      </div>
+      <button>View all customer stories</button>
+      <button class="getDemo">Get a Demo</button>
     </div>
-  </div>
-  <div id="block_55">
+
+    <!-- Home Page Block_6 -->
+    <div id="block_6">
+      <div id="angle"></div>
+      <h1>Align your goals.</h1>
+      <h1>Improve your ROI</h1>
+      <div id="curved1"></div>
+      <div id="curved2"></div>
+    </div>
+
+    <!-- Home Page Block_7 -->
+    <div id="block_7">
+      <h1>Help Desk Software for today's</h1>
+      <h1>fast-changing global businesses</h1>
+    </div>
     <div>
-      <img src="https://assets.www.happyfox.com/v2/images/keep_everything.svg" alt="ERROR">
+      <button class="getDemo">Get a Demo</button>
+    </div>
+
+    <!-- Home Page Block_8 -->
+    <div id="block_8">
+      <h1>A happy roof that can accommodate</h1>
+      <h1>all your favorite business apps.</h1>
     </div>
     <div>
-      <div>
-        <p>
-          “We consider HappyFox a one-stop shop for help desk software to support our global customer network.”
-        </p>
-      </div>
-      <div>
-        <p>Martin Hartvigsen</p>
-        <p>Director, Global Technical Support at Jabra GN</p>
+      <button>View all integrations</button>
+      <button class="getDemo">Get a Demo</button>
+    </div>
+
+    <!-- Home Page Block_9 -->
+    <div class="block_9">
+      <h1>Thousands of great companies call</h1>
+      <h1>HappyFox a great friend</h1>
+      <div id="block_9">
+        <div>
+          <p>
+            "With HappyFox we have a specialized partner, whose vast customer
+            portfolio across multiple industries, sees and knows the next “big
+            thing” in customer support, and integrates this into a compact and
+            cost-effective solution, saving considerable effort, time and cost
+            for us. In short, it allows us to focus on happy customers the rest
+            we leave to HappyFox."
+          </p>
+        </div>
+        <div>
+          <div id="name">
+            <p>Martin Hartvigsen</p>
+            <p>Director, Global Technical Support</p>
+          </div>
+          <div>
+            <img
+              src="https://assets.www.happyfox.com/v2/logo/jabra.svg"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div>
-    <button>View all customer stories</button>
-    <button class="getDemo">Get a Demo</button>
-  </div>
-
-
-  <!-- Home Page Block_6 -->
-  <div id="block_6">
-    <div id="angle"></div>
-    <h1>Align your goals.</h1>
-    <h1>Improve your ROI</h1>
-    <div id="curved1"></div>
-    <div id="curved2"></div>
-  </div>
-
-  <!-- Home Page Block_7 -->
-  <div id="block_7">
-    <h1>Help Desk Software for today's</h1>
-    <h1>fast-changing global businesses</h1>
-  </div>
-  <div>
-    <button class="getDemo">Get a Demo</button>
-  </div>
-
-  <!-- Home Page Block_8 -->
-  <div id="block_8">
-    <h1>A happy roof that can accommodate</h1>
-    <h1>all your favorite business apps.</h1>
-  </div>
-  <div>
-    <button>View all integrations</button>
-    <button class="getDemo">Get a Demo</button>
-  </div>
-
-  <!-- Home Page Block_9 -->
-
-  <!-- Home footer Page  -->
-  <div id="homefooter">
     <div>
-      <div id="footer_1">
-        <h5>FEATURES</h5>
-      </div>
+      <button id="left-btn">
+        <ion-icon name="arrow-back-circle-outline"></ion-icon>
+      </button>
+      <button id="right-btn">
+        <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+      </button>
+    </div>
 
-      <div id="footer_2">
-        <!-- FOR BUSINESSES -->
-        <div>
-          <h5>FOR BUSINESSES</h5>
-          <p><a href="">Enterprise</a></p>
-          <p><a href="">Small-Business</a></p>
+    <!-- Home footer Page  -->
+    <div id="homefooter">
+      <div>
+        <div id="footer_1">
+          <h5>FEATURES</h5>
         </div>
 
-        <!-- FOR INDUSTRIES -->
-        <div>
-          <h5>FOR INDUSTRIES</h5>
-          <p>
-            <a href="">Education</a>, <a href="">Retail</a>,
-            <a href="">Travel</a>
-          </p>
-          <p>
-            <a href="">IT Services</a>, <a href="">Telecom</a>,
-            <a href="">Government</a>
-          </p>
-          <p>
-            <a href="">Non-Profit Organizations</a>
-          </p>
-          <p>
-            <a href="">Healthcare</a>, <a href="">Real Estate</a>,
-            <a href="">Airlines</a>
-          </p>
+        <div id="footer_2">
+          <!-- FOR BUSINESSES -->
+          <div>
+            <h5>FOR BUSINESSES</h5>
+            <p><a href="">Enterprise</a></p>
+            <p><a href="">Small-Business</a></p>
+          </div>
+
+          <!-- FOR INDUSTRIES -->
+          <div>
+            <h5>FOR INDUSTRIES</h5>
+            <p>
+              <a href="">Education</a>, <a href="">Retail</a>,
+              <a href="">Travel</a>
+            </p>
+            <p>
+              <a href="">IT Services</a>, <a href="">Telecom</a>,
+              <a href="">Government</a>
+            </p>
+            <p>
+              <a href="">Non-Profit Organizations</a>
+            </p>
+            <p>
+              <a href="">Healthcare</a>, <a href="">Real Estate</a>,
+              <a href="">Airlines</a>
+            </p>
+          </div>
+
+          <!-- FOR TEAMS -->
+          <div>
+            <h5>FOR TEAMS</h5>
+            <p>
+              <a href="">HR</a>, <a href="">Facilities</a>,
+              <a href="">Marketing</a>
+            </p>
+            <p>
+              <a href="">Sales</a>,
+              <a href="">Customer Support</a>
+            </p>
+          </div>
+
+          <!-- COMPARE -->
+          <div>
+            <h5>COMPARE</h5>
+            <p>
+              <a href="">Zendesk vs HappyFox</a>
+            </p>
+            <p>
+              <a href="">Freshdesk vs HappyFox</a>
+            </p>
+            <p>
+              <a href="">Kayako vs HappyFox</a>
+            </p>
+            <p>
+              <a href="">Gmail Alternative for Support</a>
+            </p>
+          </div>
         </div>
 
-        <!-- FOR TEAMS -->
-        <div>
-          <h5>FOR TEAMS</h5>
-          <p>
-            <a href="">HR</a>, <a href="">Facilities</a>,
-            <a href="">Marketing</a>
-          </p>
-          <p>
-            <a href="">Sales</a>,
-            <a href="">Customer Support</a>
-          </p>
+        <div id="footer_3">
+          <h5>USE CASES</h5>
         </div>
 
-        <!-- COMPARE -->
-        <div>
-          <h5>COMPARE</h5>
-          <p>
-            <a href="">Zendesk vs HappyFox</a>
-          </p>
-          <p>
-            <a href="">Freshdesk vs HappyFox</a>
-          </p>
-          <p>
-            <a href="">Kayako vs HappyFox</a>
-          </p>
-          <p>
-            <a href="">Gmail Alternative for Support</a>
-          </p>
-        </div>
-      </div>
+        <div id="footer_4">
+          <!-- RESOURCES -->
+          <div>
+            <h5>RESOURCES</h5>
+            <p><a href="">E-Books & Guides</a></p>
+            <p><a href="">Webinars</a></p>
+            <p><a href="">Customer Stories</a></p>
+            <p><a href="">Videos</a></p>
+            <p><a href="">Blog</a></p>
+            <p><a href="">Help Desk API Docs</a></p>
+          </div>
 
-      <div id="footer_3">
-        <h5>USE CASES</h5>
-      </div>
+          <!-- COMPANY -->
+          <div>
+            <h5>COMPANY</h5>
+            <p><a href="about.html">About Us</a></p>
+            <p><a href="">Our Customers</a></p>
+            <p><a href="">Jobs</a></p>
+            <p><a href="">Press & Media</a></p>
+          </div>
 
-      <div id="footer_4">
-        <!-- RESOURCES -->
-        <div>
-          <h5>RESOURCES</h5>
-          <p><a href="">E-Books & Guides</a></p>
-          <p><a href="">Webinars</a></p>
-          <p><a href="">Customer Stories</a></p>
-          <p><a href="">Videos</a></p>
-          <p><a href="">Blog</a></p>
-          <p><a href="">Help Desk API Docs</a></p>
-        </div>
-
-        <!-- COMPANY -->
-        <div>
-          <h5>COMPANY</h5>
-          <p><a href="about.html">About Us</a></p>
-          <p><a href="">Our Customers</a></p>
-          <p><a href="">Jobs</a></p>
-          <p><a href="">Press & Media</a></p>
-        </div>
-
-        <!-- CONTACT US -->
-        <div>
-          <h5>CONTACT US</h5>
-          <p><a href="">Contact Sales</a></p>
-          <p><a href="">Get Support</a></p>
-          <p><a href="">1-949-535-2220</a></p>
-          <p><a href="">support@happyfox.com</a></p>
+          <!-- CONTACT US -->
+          <div>
+            <h5>CONTACT US</h5>
+            <p><a href="">Contact Sales</a></p>
+            <p><a href="">Get Support</a></p>
+            <p><a href="">1-949-535-2220</a></p>
+            <p><a href="">support@happyfox.com</a></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!--footer Bottom Section -->
-  <div id="bottom">
-    <div>
+    <!--footer Bottom Section -->
+    <div id="bottom">
       <div>
-        <img src="	https://assets.www.happyfox.com/v2/images/bottom-footer/helpdesk-footer.svg" alt="" />
-        <p>Help Desk</p>
+        <div>
+          <img
+            src="	https://assets.www.happyfox.com/v2/images/bottom-footer/helpdesk-footer.svg"
+            alt=""
+          />
+          <p>Help Desk</p>
+        </div>
+        <div>
+          <img
+            src="https://assets.www.happyfox.com/v2/images/bottom-footer/hf-assist-ai-footer.svg"
+            alt=""
+          />
+          <p>Assist AI</p>
+        </div>
+        <div>
+          <img
+            src="https://assets.www.happyfox.com/v2/images/bottom-footer/livechat-footer.svg"
+            alt=""
+          />
+          <p>Live Chat</p>
+        </div>
+        <div>
+          <img
+            src="https://assets.www.happyfox.com/v2/images/bottom-footer/chatbot-footer.svg"
+            alt=""
+          />
+          <p>Chatbot</p>
+        </div>
+        <div>
+          <img
+            src="https://assets.www.happyfox.com/v2/images/bottom-footer/bi-footer.svg"
+            alt=""
+          />
+          <p>Business Intelligence</p>
+        </div>
+        <div>
+          <img
+            src="https://assets.www.happyfox.com/v2/images/bottom-footer/workflows-footer.svg"
+            alt=""
+          />
+          <p>Workflows</p>
+        </div>
+        <div>
+          <img
+            src="https://assets.www.happyfox.com/v2/images/bottom-footer/inapp-chat-footer.svg"
+            alt=""
+          />
+          <p>In-App Chat</p>
+        </div>
       </div>
-      <div>
-        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/hf-assist-ai-footer.svg" alt="" />
-        <p>Assist AI</p>
-      </div>
-      <div>
-        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/livechat-footer.svg" alt="" />
-        <p>Live Chat</p>
-      </div>
-      <div>
-        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/chatbot-footer.svg" alt="" />
-        <p>Chatbot</p>
-      </div>
-      <div>
-        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/bi-footer.svg" alt="" />
-        <p>Business Intelligence</p>
-      </div>
-      <div>
-        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/workflows-footer.svg" alt="" />
-        <p>Workflows</p>
-      </div>
-      <div>
-        <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/inapp-chat-footer.svg" alt="" />
-        <p>In-App Chat</p>
+
+      <div id="bottomfotter">
+        <div>
+          <div>
+            <p>
+              <img
+                src="https://assets.www.happyfox.com/img/lang-icon.svg"
+                alt=""
+              />
+              English
+            </p>
+          </div>
+          <div>
+            <p>Terms</p>
+          </div>
+          <div>
+            <p>Privacy</p>
+          </div>
+          <div>
+            <p>Status</p>
+          </div>
+          <div>
+            <p>Security</p>
+          </div>
+          <div>
+            <p>GDPR</p>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <img
+              src="https://assets.www.happyfox.com/v2/images/facebook-logo-button1x.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://assets.www.happyfox.com/v2/images/twitter1x.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://assets.www.happyfox.com/v2/images/youtube1x.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://assets.www.happyfox.com/v2/images/bottom-footer/linkedin-logo-button.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div>
+          <p>Copyright ©2022 HappyFox Inc. All rights reserved.</p>
+        </div>
       </div>
     </div>
-
-    <div id="bottomfotter">
-      <div>
-        <div>
-          <p>
-            <img src="https://assets.www.happyfox.com/img/lang-icon.svg" alt="" />
-            English
-          </p>
-        </div>
-        <div>
-          <p>Terms</p>
-        </div>
-        <div>
-          <p>Privacy</p>
-        </div>
-        <div>
-          <p>Status</p>
-        </div>
-        <div>
-          <p>Security</p>
-        </div>
-        <div>
-          <p>GDPR</p>
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <img src="https://assets.www.happyfox.com/v2/images/facebook-logo-button1x.svg" alt="" />
-        </div>
-        <div>
-          <img src="https://assets.www.happyfox.com/v2/images/twitter1x.svg" alt="" />
-        </div>
-        <div>
-          <img src="https://assets.www.happyfox.com/v2/images/youtube1x.svg" alt="" />
-        </div>
-        <div>
-          <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/linkedin-logo-button.svg" alt="" />
-        </div>
-      </div>
-
-      <div>
-        <p>Copyright ©2022 HappyFox Inc. All rights reserved.</p>
-      </div>
-    </div>
-  </div>
-</body>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
 </html>
 
 <script src="./Scripts/block.js"></script>
@@ -408,6 +574,7 @@
 </script>
 <script>
   //  CHECKING WE LOG OR NOT for NavBar
+  let intoFeature = document.getElementById("intoFeature");
   let userName = JSON.parse(localStorage.getItem("UserName"));
   let navbarFeature = document.querySelectorAll(".Navbar1>div>div>a");
   let flag = 0;
@@ -417,6 +584,20 @@
       alert("Please Login First");
       console.log(" I am here in NAVBAR");
       flag++;
+    } else {
+      intoFeature.addEventListener("click", function (ele) {
+        ele.preventDefault();
+        window.location.href = "feature.html";
+        console.log("feature");
+      });
     }
   });
+
+  // logout
+  let logout = document.getElementById("logout");
+  logout.addEventListener("click",function(event){
+    localStorage.removeItem("UserName");
+    console.log("remove")
+    alert("You are Successfully Log out From this Page")
+  })
 </script>
