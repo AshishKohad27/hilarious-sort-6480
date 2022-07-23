@@ -122,6 +122,10 @@
 }
 
 @media all and (min-width: 160px) and (max-width: 768px) {
+  #block_6{
+    width: 500px;
+    /* background-color: aqua; */
+  }
   #block_6 > div {
     width: 500px;
     margin: auto;

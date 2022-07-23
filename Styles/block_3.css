@@ -34,6 +34,7 @@
   font-size: 1rem;
   border-radius: 10px;
 }
+/* medium Screen */
 #block_3 button:hover {
   background-color: #f16631;
   color: white;
