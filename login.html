@@ -238,23 +238,26 @@
     event.preventDefault();
     console.log("i am sumbit");
     formName = form.accountname.value;
-    // console.log(formName);
+    console.log(formName);
     formPass = form.password.value;
-    // console.log(formPass);
+    console.log(formPass);
 
     let flag = 0;
     getdetails.forEach(function (ele) {
       if (formName === "" && formPass === "" && flag === 0) {
         console.log("same name,passward");
-        alert("Your are trying to fill Wrong Id and Password");
+        alert("PLease Id and Password");
       } else if (formName === ele.accountname && formPass === ele.password) {
         console.log("i am here correct");
         flag++;
         alert("Successfully Login");
         window.location.href = "index.html";
         localStorage.setItem("UserName", JSON.stringify(ele));
+      }else if(formName !== ele.accountname && formPass !== ele.password){
+        alert("Your are trying to fill Wrong Id and Password");
       }
     });
     form.accountname.value = "";
+    form.password.value = "";
   });
 </script>

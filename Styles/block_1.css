@@ -52,3 +52,41 @@
   font-weight: bold;
   color: white;
 }
+/* Medium Screen */
+@media all and (min-width: 481px) and (max-width: 768px){
+  #block_1{
+    width: 500px;
+  }
+  #block_1 > div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 300px;
+    gap: 20px;
+  }
+  #block_1 input{
+    width: 200px;
+  }
+  #block_1 button {
+     width: 100px;
+     margin-left: 70px;
+  }
+}
+/* Small Screen */
+@media all and (min-width: 320px) and (max-width: 480px){
+  #block_1{
+    width: 300px;
+  }
+  #block_1 > div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 200px;
+    gap: 20px;
+  }
+  #block_1 input{
+    width: 200px;
+  }
+  #block_1 button {
+     width: 100px;
+     margin-left: 70px;
+  }
+}

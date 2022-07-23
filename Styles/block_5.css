@@ -22,9 +22,17 @@
   color: grey;
   padding-bottom: 40px;
 }
-@media all and (min-width: 160px) and (max-width: 768px) {
+/* medium Screen */
+@media all and (min-width: 481px) and (max-width: 768px) {
   #block_5 > p {
     width: 500px;
+    /* background-color: lawngreen; */
+  }
+}
+/* Small Screen */
+@media all and (min-width: 320px) and (max-width: 480px) {
+  #block_5 > p {
+    width: 300px;
     /* background-color: lawngreen; */
   }
 }

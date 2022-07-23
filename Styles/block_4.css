@@ -41,10 +41,18 @@
   width: 150px;
   height: 25px;
 }
-@media all and (min-width: 160px) and (max-width: 768px) {
+@media all and (min-width: 481px) and (max-width: 768px) {
   #block_4 > div {
     display: grid;
     width: 500px;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media all and (min-width: 320px) and (max-width: 480px) {
+  #block_4 > div {
+    display: grid;
+    width: 300px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
