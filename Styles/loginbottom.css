@@ -6,9 +6,6 @@
   padding-top: 6px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 13px;
-  /* position: sticky;
-  bottom: 0px;
-  z-index: 0; */
 }
 
 #bottom > div:first-child {
@@ -21,17 +18,20 @@
 
 #bottom > div:first-child {
   display: flex;
+  align-items: center ;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 0px 150px;
 }
 
 #bottom > div:first-child > div {
   display: flex;
+  align-items: center;
   color: #f1eeee;
   margin: auto;
 }
 #bottom > div:last-child {
   display: flex;
+  justify-content: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-top: 27px;
   padding-left: 30px;
@@ -42,8 +42,12 @@
 
 #bottom > div:last-child > div {
   display: flex;
+  align-items: center;
   color: #f1eeee;
   margin: auto;
+}
+#bottom > div > div > p{
+  margin-top: 11px;
 }
 #bootomfotter > div {
   margin-left: 50px;
